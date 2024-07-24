@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Wedesi-drinks</title>
+    <link rel="icon" 
+     type="image/png" 
+     href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menu1.css">
+
+    <!-- <style>
+        body {
+            background: white;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .slider {
+            padding: 40px;
+            padding-left: 10%;
+            color: #fff;
+            margin-top: -70px;
+        }
+
+        .slider .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider__flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .slider__col {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        .slider__prev,
+        .slider__next {
+            cursor: pointer;
+            text-align: center;
+            color: aqua;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+        }
+
+        .slider__prev:focus,
+        .slider__next:focus {
+            outline: none;
+        }
+
+        .slider__thumbs {
+            height: calc(700px - 200px);
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        .slider__thumbs .slider__image {
+            transition: 0.25s;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+
+        .slider__thumbs .slider__image:hover {
+            opacity: 1;
+        }
+
+        .slider__thumbs .swiper-slide-thumb-active .slider__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .slider__images {
+            height: 600px;
+            overflow: hidden;
+            /* Add this line to hide overflow */
+        }
+
+        .slider__images .slider__image img {
+            transition: 3s;
+        }
+
+        .slider__images .slider__image:hover img {
+            transform: scale(1.1);
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .fancy-border-radius {
+            width: 47%;
+            height: 20%;
+            background: black;
+            position: absolute;
+            bottom: 0%;
+            right:0%;
+            margin-top: 45%;
+            z-index: 5;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            opacity: 0.8;
+            padding-left: 1%;
+        }
+
+        .ordernow button {
+            width: 20%;
+            height: 15%;
+            border: 0;
+            top: 20%;
+            margin-top: 40%;
+            position: absolute;
+            margin-left: 80%;
+            border-radius: 0px 0px 12px 0px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+            cursor: pointer;
+            color: #121212;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .ordernow button:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .content {
+            margin: 0;
+            margin-left: -1%;
+            font-size: 15px;
+            background-color: black;
+        }
+
+        .content h2 {
+            color: red;
+            margin: 0;
+            font-size: large;
+            margin-top: -5px;
+            background-color: transparent;
+        }
+
+        @media (max-width: 767.98px) {
+            .slider__flex {
+                flex-direction: column-reverse;
+            }
+
+            .slider__col {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .slider__images {
+                width: 100%;
+            }
+
+            .slider__thumbs {
+                height: 100px;
+                width: calc(100% - 96px);
+                margin: 0 16px;
+            }
+
+            .slider__prev,
+            .slider__next {
+                height: auto;
+                width: 32px;
+               
+            }
+        }
+
+
+    </style> -->
+</head>
+
+<body>
+    <header >
+        <nav>
+          
+          <ul class="nav-bar ">
+         
+          <a href="we-desi-main-page.html" class="logo">
+           <img src= "logo.jpg" class="logo" height="91px" width="111px" align="left">
+          </a>
+          <input  type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="we-desi-main-page.html" class="style home-button">HOME</a></li>
+     <li><a href="we-desi-aboutus.html" class="style aboutus-button">ABOUT US</a></li>
+            <li><a href="we-desi-gallery.html"class="style gallery-button">GALLERY</a></li>
+            <li><a href="we-desi-menupage.html"class="style menu-button">MENU</a></li>
+            <li><a href="we-desi-sweets.html"class="style sweets-button">SWEETS</a></li>
+                <li><a href="we-desi-contactus.html"class="style contactus-button">CONTACT US</a></li>
+            </span>
+            <label for="check" class="open-menu"><a href="we-desi-menupage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></label>
+          </ul>
+          <div class="language-buttons">
+            <button id="btn-en">EN</button>
+            <button id="btn-fr">FR</button>
+        </div>
+        </nav>
+        <p class="menu1"> MENU > <span class="view">VIEW ALL > DRINKS</span></p><br>
+
+        </header>
+        <navbar-sidebar class="side">
+            <div class="list-left scrollmenu">
+                <ul class="ul-list">
+                    <li class="list-left-11 menu11">MENU</li>
+                    
+                <li  class="list-left-1"> <a href="chatpata-chaat.html" class="list-left-1 s1">chatpatta chaat</a></li>
+                <li  class="list-left-1"><a href="tikke.html" class="list-left-1 s2">tikke-shikke</a></li>
+                <li  class="list-left-1" ><a href="burger.html" class="list-left-1 s3">burger and rolls</a></li>
+                <li  class="list-left-1" ><a href="chinese.html" class="list-left-1 s4">indo chinese</a></li>
+                <li  class="list-left-1" ><a href="south.html" class="list-left-1 s5">south indian</a></li>
+                <li  class="list-left-1" ><a href="desi.html" class="list-left-1 s6">desi curries</a></li>
+                <li  class="list-left-1" ><a href="parantha.html" class="list-left-1 s7">parantha and naan</a></li>
+                <li  class="list-left-1 " ><a href="combo.html" class="list-left-1 s8">we desi combo</a></li>
+                <li  class="list-left-1" ><a href="rice.html" class="list-left-1 s9">rice</a></li>
+                <li  class="list-left-1" ><a href="drinks.html" class="list-left-1 s10">drinks</a></li>
+                <li  class="list-left-1" ><a href="dessert.html" class="list-left-1 s11">desserts</a></li>
+                <li  class="list-left-1" ><a href="kids.html"class="list-left-1 s12">kids special</a></li>
+                <li  class="list-left-1" ><a href="sides.html"class="list-left-1 s13">sides</a></li>
+                </ul>  
+                
+                </div>
+
+        </navbar-sidebar>
+        
+            <div  class="horizontalContainer thumb scroll slider"  >
+        <a href="#0">
+            <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bb307b38b4babf5b2ba9f6461c718ae7" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#1">
+            <img src="https://img-global.cpcdn.com/recipes/65df916d9020bb75/1200x630cq70/photo.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#2">
+            <img src="https://i0.wp.com/www.geetascuisine.com/wp-content/uploads/2015/04/MangoRabdi-Falooda_18.jpg_.jpg?fit=640%2C427" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#3">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/8676b2130661883.6184d73ab87ee.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPUr6kAGCP7MPw0smTWCphoRMWZw2CtnbqoPWSil64Fg&s" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#5">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/delish-191017-brunch-punch-0211-landscape-pf-1583527183.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#6">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kt7jv680/milk-drink-mix/y/t/e/400-chikoo-sapota-instant-milkshake-mix-no-artificial-flavours-original-imag6hmbykrxgzts.jpeg?q=90&crop=false" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#7">
+            <img src="https://static.vecteezy.com/system/resources/previews/031/765/142/non_2x/fresh-yellow-mango-smoothie-in-a-glass-with-straw-fresh-fruits-and-mint-summer-tropical-drink-generative-ai-free-photo.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#8">
+            <img src="https://media.istockphoto.com/id/1365859011/photo/drink-mango-lassi-in-two-glasses-on-rustic-concrete-table-with-fresh-ripe-cut-manfo-from-above.jpg?s=612x612&w=0&k=20&c=uHnr_0raQDe2sgUYHdP5GSa2raaj3ILG4m1cmFHtVJA=" width="180" height="120" class="sweet" >  
+        </a>
+       
+        <a href="#9">
+            <img src="https://cdn.cdnparenting.com/articles/2019/03/25105752/1107982100-H.webp" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#11">
+            <img src="https://t3.ftcdn.net/jpg/04/57/47/16/360_F_457471670_KIXnobj80QJDGaFTvzhBLY4iW6BawTKK.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#12">
+            <img src="https://thumbs.dreamstime.com/b/shikanji-nimbu-pani-popular-cold-drink-india-paani-famous-indian-usually-served-summers-now-days-has-become-194458640.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        
+        <a href="#13">
+            <img src="https://media.istockphoto.com/id/1415700079/photo/mango-mojito-in-highball-glass-with-sliced-mango-on-wooden-table.jpg?s=612x612&w=0&k=20&c=p3AmARdk9fsd8fMdwChSAxxKn5PmHnVospP7jlw1IUI=" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#15">
+            <img src="https://www.thespruceeats.com/thmb/q4GmLjbV3ipjADKSw8yrQJ0k27c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pineapple-mojito-recipe-760474-hero-01-bbc1b205d34b4f55b576005d12d52b6d.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#16">
+            <img src="https://static.toiimg.com/photo/78092190.cms" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#17">
+            <img src="https://cloudinary-cdn.whisk.com/image/upload/g_auto,c_fill,q_60,f_auto,h_630,w_1200/v1673285094/v3/user-recipes/a2aba6eb1c34a04229899c87ceebbcca.jpg" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#18">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMg8D4_Rx-8GrxxiqUE_vsTU3kufh9H61zcN5stauTw&s" width="180" height="120" class="sweet" >  
+        </a>
+        <a href="#19">
+            <img src="https://packagingsuppliersglobal.com/assets/uploads/credit-The-Coca-Cola-Company.png" width="180" height="120" class="sweet" >  
+        </a>
+        
+        
+
+        
+    
+    </div>
+    <div class="verticalContainer">
+        <div id="content" class="scrollable">
+        <div class="sweet-wrap" id="0">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c1" >ROYAL FALOODA ($9.99) </h3> 
+                                <img src="https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/bb307b38b4babf5b2ba9f6461c718ae7" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="1"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c2" >KESAR PISTA FALOODA ($8.99) </h3> 
+                                <img src="https://img-global.cpcdn.com/recipes/65df916d9020bb75/1200x630cq70/photo.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="2"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c3" >RASMALAI RABDI FALOODA ($9.99) </h3> 
+                                <img src="https://i0.wp.com/www.geetascuisine.com/wp-content/uploads/2015/04/MangoRabdi-Falooda_18.jpg_.jpg?fit=640%2C427" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="3"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c4" >MILK BADAM($9.99) </h3> 
+                                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/8676b2130661883.6184d73ab87ee.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="4"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c5" >DRY FRUIT SHAKE($9.99) </h3> 
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPUr6kAGCP7MPw0smTWCphoRMWZw2CtnbqoPWSil64Fg&s" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="5"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c6" >FRUIT PUNCH($9.99) </h3> 
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/delish-191017-brunch-punch-0211-landscape-pf-1583527183.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="6"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c7" >CHIKKOO SHAKE($9.99) </h3> 
+                                <img src="https://rukminim2.flixcart.com/image/850/1000/kt7jv680/milk-drink-mix/y/t/e/400-chikoo-sapota-instant-milkshake-mix-no-artificial-flavours-original-imag6hmbykrxgzts.jpeg?q=90&crop=false" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="7"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c8" >MANGO SHAKE($4.99) </h3> 
+                                <img src="https://static.vecteezy.com/system/resources/previews/031/765/142/non_2x/fresh-yellow-mango-smoothie-in-a-glass-with-straw-fresh-fruits-and-mint-summer-tropical-drink-generative-ai-free-photo.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="8"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c9" >MANGO LASSI($4.99) </h3> 
+                                <img src="https://media.istockphoto.com/id/1365859011/photo/drink-mango-lassi-in-two-glasses-on-rustic-concrete-table-with-fresh-ripe-cut-manfo-from-above.jpg?s=612x612&w=0&k=20&c=uHnr_0raQDe2sgUYHdP5GSa2raaj3ILG4m1cmFHtVJA=" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="9"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c10" >SWEET/SALTY LASSI($3.99) </h3> 
+                                <img src="https://cdn.cdnparenting.com/articles/2019/03/25105752/1107982100-H.webp" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="11"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c11" >MASALA CHAAS($4.99) </h3> 
+                                <img src="https://t3.ftcdn.net/jpg/04/57/47/16/360_F_457471670_KIXnobj80QJDGaFTvzhBLY4iW6BawTKK.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="12"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c12" >MASALA SHIKANJI($4.99) </h3> 
+                                <img src="https://thumbs.dreamstime.com/b/shikanji-nimbu-pani-popular-cold-drink-india-paani-famous-indian-usually-served-summers-now-days-has-become-194458640.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="13"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c13" >MANGO MOJITO($7.99) </h3> 
+                                <img src="https://media.istockphoto.com/id/1415700079/photo/mango-mojito-in-highball-glass-with-sliced-mango-on-wooden-table.jpg?s=612x612&w=0&k=20&c=p3AmARdk9fsd8fMdwChSAxxKn5PmHnVospP7jlw1IUI=" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="15"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c14" >PINEAPPLE MOJITO($7.99) </h3> 
+                                <img src="https://www.thespruceeats.com/thmb/q4GmLjbV3ipjADKSw8yrQJ0k27c=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pineapple-mojito-recipe-760474-hero-01-bbc1b205d34b4f55b576005d12d52b6d.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="16"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c15" >GREEN TEA($3.99) </h3> 
+                                <img src="https://static.toiimg.com/photo/78092190.cms" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="17"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c16" >KASHMIRI CHAI($4.99) </h3> 
+                                <img src="https://cloudinary-cdn.whisk.com/image/upload/g_auto,c_fill,q_60,f_auto,h_630,w_1200/v1673285094/v3/user-recipes/a2aba6eb1c34a04229899c87ceebbcca.jpg" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="18"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c17" >COKE/PEPSI($2.49) </h3> 
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMg8D4_Rx-8GrxxiqUE_vsTU3kufh9H61zcN5stauTw&s" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="19"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+        <div class="sweet-wrap">
+            <ul class="sweet__items">
+                    <li class="sweet__item">
+                        <div class="food-sweet__item">    
+                            <h3 class="food-sweet__title c18" >INDIAN COLA($3.49) </h3> 
+                                <img src="https://packagingsuppliersglobal.com/assets/uploads/credit-The-Coca-Cola-Company.png" width="900" height="620" class="sweet" id="imageid" ><div  class="cloud1" id="20"><br><span></span></div>                       
+                    </li>
+            </ul>
+        </div>
+
+        </div>
+        </div>
+        
+                      
+
+    </div>
+    <script>
+        const horizontalImages = document.querySelectorAll('.horizontalContainer a img');
+            const sweetWraps = document.querySelectorAll('.food-sweet__item');
+            const scrollableElement = document.querySelector('.scrollable');
+
+            function handleScroll() {
+                let currentScroll = scrollableElement.scrollTop;
+                sweetWraps.forEach((sweetWrap, index) => {
+                  let sweetWrapTop = sweetWrap.offsetTop - (window.innerWidth < 700 ? 700 : 500);
+                  let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                  if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                    highlightHorizontalImage(index);
+                    scrollToHighlightedImage(horizontalImages[index]);
+                  }
+                });
+              }
+              
+         
+            scrollableElement.addEventListener('scroll', handleScroll);
+           
+            window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+                  sweetWraps.forEach((sweetWrap, index) => {
+                    let sweetWrapTop = sweetWrap.offsetTop - 500;
+                    let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                    if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                      highlightHorizontalImage(index);
+                      scrollToHighlightedImage(horizontalImages[index]);
+                    }
+                  });
+                });
+
+                function highlightHorizontalImage(index) {
+                    horizontalImages.forEach((image, i) => {
+                      if (i === index) {
+                        image.classList.add('highlighted');
+                      } else {
+                        image.classList.remove('highlighted');
+                      }
+                    });
+                  }
+                
+                function scrollToHighlightedImage(image) {
+                  image.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+              }
+
+
+              const translations = {
+              en: {
+                'HOME': 'HOME',
+                'ABOUTUS': 'ABOUT US',
+                'GALLERY': 'GALLERY',
+                'MENU': 'MENU',
+                'SWEETS': 'SWEETS',
+                'VIEW ALL': 'VIEW ALL',
+                'CONTACT US': 'CONTACT US',
+                'CHATPATTA CHAAT': 'CHATPATTA CHAAT',
+                'TIKKE-SHIKKE': 'TIKKE-SHIKKE',
+                'BURGER AND ROLLS': 'BURGER AND ROLLS',
+                'INDO CHINESE': 'INDO CHINESE',
+                'SOUTH INDIAN': 'SOUTH INDIAN',
+                'DESI CURRIES': 'DESI CURRIES',
+                'PARATHA AND NAAN': 'PARATHA AND NAAN',
+                'WE DESI COMBO': 'WE DESI COMBO',
+                'RICE': 'RICE',
+                'DRINKS': 'DRINKS',
+                'DESSERTS': 'DESSERTS',
+                'KIDS SPECIAL': 'KIDS SPECIAL',
+                'SIDES': 'SIDES',
+                'c1':"ROYAL FALOODA ($9.99)",
+                'c2': "KESAR PISTA FALOODA ($8.99)",
+                'c3': "RASMALAI RABDI FALOODA ($9.99)",
+                'c4': "MILK BADAM($9.99)",
+                'c5': "DRY FRUIT SHAKE($9.99)",
+                'c6': "FRUIT PUNCH($9.99)",
+                'c7': "CHIKKOO SHAKE($9.99)",
+                'c8': "MANGO SHAKE($4.99)",
+                'c9':"MANGO LASSI($4.99)",
+                'c10':"SWEET/SALTY LASSI($3.99)",
+                'c11':"MASALA CHAAS($4.99)",
+                'c12':"MASALA SHIKANJI($4.99)",
+                'c13':"MANGO MOJITO($7.99)",
+                'c14':"PINEAPPLE MOJITO($7.99)",
+                'c15':"GREEN TEA($3.99)",
+                'c16':"KASHMIRI CHAI($4.99)",
+                'c17':"COKE/PEPSI($2.49)",
+                'c18':"INDIAN COLA($3.49)"
+
+              },
+              fr: {
+                'HOME': 'ACCUEIL',
+                'ABOUTUS': 'À PROPOS DE NOUS',
+                'GALLERY': 'GALERIE',
+                'MENU': 'MENU',
+                'SWEETS': 'SUCRERIES',
+                'CONTACT US': 'NOUS CONTACTER',
+                'VIEW ALL': 'VOIR TOUT',
+                'CHATPATTA CHAAT': 'chat épicé ',
+                'TIKKE-SHIKKE': 'TIC SHIKKÉ ',
+                'BURGER AND ROLLS': 'BURGER ET ROULEAUX ',
+                'INDO CHINESE': 'INDO CHINOIS',
+                'SOUTH INDIAN': 'INDIEN DU SUD ',
+                'DESI CURRIES': 'CURRIES DESI',
+                'PARATHA AND NAAN': 'PARATHA ET NAAN',
+                'WE DESI COMBO': 'NOUS DESI COMBO',
+                'RICE': 'RIZ',
+                'DRINKS': 'BOISSONS',
+                'DESSERTS': 'LE DESSERTS',
+                'KIDS SPECIAL': 'SPÉCIAL ENFANTS ',
+                'SIDES': 'CÔTÉS',
+                'c1':"FALOODA ROYALE (9,99 $)",
+                'c2':"KESAR PISTA FALOODA (8,99 $)",
+                'c3':"RASMALAI RABDI FALOODA (9,99 $)",
+                'c4':"LAIT BADAM ($9,99)",
+                'c5':"SHAKE AUX FRUITS SECS ($9,99)",
+                'c6':"PUNCH AUX FRUITS(9,99 $)",
+                'c7':"CHIKKOO SHAKE(9,99 $)",
+                'c8':"SHAKE À LA MANGUE ($4,99)",
+                'c9':"LASSI MANGUE(4,99$)",
+                'c10':"LASSI SUCRÉ/SALÉ(3,99$)",
+                'c11':"MASALA CHAAS(4,99 $)",
+                'c12':"MASALA SHIKANJI(4,99 $)",
+                'c13':"MOJITO MANGUE ($7,99)",
+                'c14':"MOJITO À L'ANANAS ($7,99)",
+                'c15':"THÉ VERT(3,99$)",
+                'c16':"CHAI DU CACHEMIRE(4,99 $)",
+                'c17':"COKE/PEPSI($2,49)",
+                'c18':"COLA INDIEN ($3,49)"
+              }
+            };
+            
+            document.addEventListener('DOMContentLoaded', () => {
+              const savedLanguage = localStorage.getItem('language') || 'en';
+              translatePage(savedLanguage);
+              document.body.classList.toggle('fr-mode', savedLanguage === 'fr');
+            
+              document.getElementById('btn-en').addEventListener('click', () => {
+                setLanguage('en');
+              });
+            
+              document.getElementById('btn-fr').addEventListener('click', () => {
+                setLanguage('fr');
+              });
+            });
+            
+            function setLanguage(lang) {
+              localStorage.setItem('language', lang);
+              translatePage(lang);
+              document.body.classList.toggle('fr-mode', lang === 'fr');
+            }
+            
+            function translatePage(lang) {
+              const elementsToTranslate = {
+                '.home-button': 'HOME',
+                '.aboutus-button': 'ABOUTUS',
+                '.gallery-button': 'GALLERY',
+                '.menu-button': 'MENU',
+                '.sweets-button': 'SWEETS',
+                '.contactus-button': 'CONTACT US',
+                '.view': 'VIEW ALL',
+                
+                '.s1': 'CHATPATTA CHAAT',
+                '.s2': 'TIKKE-SHIKKE',
+                '.s3': 'BURGER AND ROLLS',
+                '.s4': 'INDO CHINESE',
+                '.s5': 'SOUTH INDIAN',
+                '.s6': 'DESI CURRIES',
+                '.s7': 'PARATHA AND NAAN',
+                '.s8': 'WE DESI COMBO',
+                '.s9': 'RICE',
+                '.s10': 'DRINKS',
+                '.s11': 'DESSERTS',
+                '.s12': 'KIDS SPECIAL',
+                '.s13': 'SIDES',
+                '.food-sweet__title.c1': "c1",
+                '.food-sweet__title.c2': "c2",
+                '.food-sweet__title.c3': "c3",
+                '.food-sweet__title.c4': "c4",
+                '.food-sweet__title.c5': "c5",
+                '.food-sweet__title.c6': "c6",
+                '.food-sweet__title.c7': 'c7',
+                '.food-sweet__title.c8': "c8",
+                '.food-sweet__title.c9': "c9",
+                '.food-sweet__title.c10': "c10",
+                '.food-sweet__title.c11': "c11",
+                '.food-sweet__title.c12': "c12",
+                '.food-sweet__title.c13': "c13",
+                '.food-sweet__title.c14': "c14",
+                '.food-sweet__title.c15': "c15",
+                '.food-sweet__title.c16': "c16",
+                '.food-sweet__title.c17': "c17",
+                '.food-sweet__title.c18': "c18",
+
+                
+              };
+            
+              for (const [selector, key] of Object.entries(elementsToTranslate)) {
+                const element = document.querySelector(selector);
+                if (element) {
+                  element.innerText = translations[lang][key];
+                }
+              }
+            }
+    </script>
+</body>
+
+</html>

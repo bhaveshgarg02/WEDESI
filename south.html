@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Wedesi-south-indian</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menu1.css">
+
+    <!-- <style>
+        body {
+            background: white;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .slider {
+            padding: 40px;
+            padding-left: 10%;
+            color: #fff;
+            margin-top: -70px;
+        }
+
+        .slider .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider__flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .slider__col {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        .slider__prev,
+        .slider__next {
+            cursor: pointer;
+            text-align: center;
+            color: aqua;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+        }
+
+        .slider__prev:focus,
+        .slider__next:focus {
+            outline: none;
+        }
+
+        .slider__thumbs {
+            height: calc(700px - 200px);
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        .slider__thumbs .slider__image {
+            transition: 0.25s;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+
+        .slider__thumbs .slider__image:hover {
+            opacity: 1;
+        }
+
+        .slider__thumbs .swiper-slide-thumb-active .slider__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .slider__images {
+            height: 600px;
+            overflow: hidden;
+            /* Add this line to hide overflow */
+        }
+
+        .slider__images .slider__image img {
+            transition: 3s;
+        }
+
+        .slider__images .slider__image:hover img {
+            transform: scale(1.1);
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .fancy-border-radius {
+            width: 47%;
+            height: 20%;
+            background: black;
+            position: absolute;
+            bottom: 0%;
+            right:0%;
+            margin-top: 45%;
+            z-index: 5;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            opacity: 0.8;
+            padding-left: 1%;
+        }
+
+        .ordernow button {
+            width: 20%;
+            height: 15%;
+            border: 0;
+            top: 20%;
+            margin-top: 40%;
+            position: absolute;
+            margin-left: 80%;
+            border-radius: 0px 0px 12px 0px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+            cursor: pointer;
+            color: #121212;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .ordernow button:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .content {
+            margin: 0;
+            margin-left: -1%;
+            font-size: 15px;
+            background-color: black;
+        }
+
+        .content h2 {
+            color: red;
+            margin: 0;
+            font-size: large;
+            margin-top: -5px;
+            background-color: transparent;
+        }
+
+        @media (max-width: 767.98px) {
+            .slider__flex {
+                flex-direction: column-reverse;
+            }
+
+            .slider__col {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .slider__images {
+                width: 100%;
+            }
+
+            .slider__thumbs {
+                height: 100px;
+                width: calc(100% - 96px);
+                margin: 0 16px;
+            }
+
+            .slider__prev,
+            .slider__next {
+                height: auto;
+                width: 32px;
+               
+            }
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <header >
+        <nav>
+          
+          <ul class="nav-bar ">
+         
+          <a href="we-desi-main-page.html" class="logo">
+           <img src= "logo.jpg" class="logo" height="91px" width="111px" align="left">
+          </a>
+          <input  type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="we-desi-main-page.html" class="style home-button">HOME</a></li>
+     <li><a href="we-desi-aboutus.html" class="style aboutus-button">ABOUT US</a></li>
+            <li><a href="we-desi-gallery.html"class="style gallery-button">GALLERY</a></li>
+            <li><a href="we-desi-menupage.html"class="style menu-button">MENU</a></li>
+            <li><a href="we-desi-sweets.html"class="style sweets-button">SWEETS</a></li>
+                <li><a href="we-desi-contactus.html"class="style contactus-button">CONTACT US</a></li>
+               
+              </span>
+              <label for="check" class="open-menu"><a href="we-desi-menupage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></label>
+          </ul>
+          <div class="language-buttons">
+            <button id="btn-en">EN</button>
+            <button id="btn-fr">FR</button>
+        </div>
+        </nav>
+        <p class="menu1"> MENU > <span class="view">VIEW ALL > SOUTH INDIAN</span></p><br>
+
+        </header>
+        <navbar-sidebar class="side">
+            <div class="list-left scrollmenu">
+                <ul class="ul-list">
+                    <li class="list-left-11 menu11">MENU</li>
+                    
+                <li  class="list-left-1"> <a href="chatpata-chaat.html" class="list-left-1 s1">chatpatta chaat</a></li>
+                <li  class="list-left-1"><a href="tikke.html" class="list-left-1 s2">tikke-shikke</a></li>
+                <li  class="list-left-1" ><a href="burger.html" class="list-left-1 s3">burger and rolls</a></li>
+                <li  class="list-left-1" ><a href="chinese.html" class="list-left-1 s4">indo chinese</a></li>
+                <li  class="list-left-1" ><a href="south.html" class="list-left-1 s5">south indian</a></li>
+                <li  class="list-left-1" ><a href="desi.html" class="list-left-1 s6">desi curries</a></li>
+                <li  class="list-left-1" ><a href="parantha.html" class="list-left-1 s7">parantha and naan</a></li>
+                <li  class="list-left-1 " ><a href="combo.html" class="list-left-1 s8">we desi combo</a></li>
+                <li  class="list-left-1" ><a href="rice.html" class="list-left-1 s9">rice</a></li>
+                <li  class="list-left-1" ><a href="drinks.html" class="list-left-1 s10">drinks</a></li>
+                <li  class="list-left-1" ><a href="dessert.html" class="list-left-1 s11">desserts</a></li>
+                <li  class="list-left-1" ><a href="kids.html"class="list-left-1 s12">kids special</a></li>
+                <li  class="list-left-1" ><a href="sides.html"class="list-left-1 s13">sides</a></li>
+                </ul>  
+                
+                </div>
+
+        </navbar-sidebar>
+  
+        
+            
+                <div  class="horizontalContainer thumb scroll slider"  >
+                <a href="#0">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/061/972/small/aromatic-and-spicy-south-indian-rasam-soup-with-tamarind-and-lentils-ai-generated-free-photo.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#1">
+                    <img src="https://www.mrcoconut.in/img/products/22_11_2022_16_24_281_pm.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#2">
+                    <img src="https://img.freepik.com/premium-photo/gobi-manchurian-dry-popular-street-food-india-made-cauliflower-florets-selective-focus_466689-19790.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#3">
+                    <img src="https://lh3.googleusercontent.com/proxy/PdyEG7vTAEZkUXaPFobmxZcJ3kwHn53BT-j-EG88j79JPqqi39D6ziQlUq2H5EDsO0nhKJjLqu2EZqcpdZz8d0JoD2TtGZXsJRnZoDLuvkk-Ac48leIMe5EXSwIIKy3-8L47PQ" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#4">
+                    <img src="https://static.vecteezy.com/system/resources/thumbnails/002/440/845/small_2x/crispy-masala-dosa-south-india-style-free-photo.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#5">
+                    <img src="https://www.palatesdesire.com/wp-content/uploads/2019/09/Mysore_Masala_Dosa@Palates_Desire-1024x738.jpg" width="180" height="120"alt=""  class="sweet">
+                </a>
+                <a href="#6">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/aa/75/73/pav-bhaji-dosa.jpg" width="180" height="120"alt=""  class="sweet">
+                </a>
+                <a href="#7">
+                    <img src="https://miro.medium.com/v2/resize:fit:1358/0*tK5WNyP0GYXCf3cJ" width="180" height="120"alt=""  class="sweet">
+                </a>
+                
+                <a href="#8">
+                    <img src="https://media.istockphoto.com/id/609811304/photo/south-indian-food-uttapam-or-ooththappam-or-uthappa.jpg?s=612x612&w=0&k=20&c=mkFfxwamPGrcXHfPM8V_pA7EBs1SXNS7YvXBdFO_0xo=" width="180" height="120"alt=""  class="sweet">
+                </a>
+                <a href="#10">
+                    <img src="https://media.istockphoto.com/id/1303091964/photo/delicious-idly-south-indian-foods-background.jpg?s=612x612&w=0&k=20&c=qYvXZcumLrfZN9rWiQMKUWiDf4mw5tKCuNjAcEQGZuA=" width="180" height="120"alt=""  class="sweet">
+                </a>
+                <a href="#11">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn100GfNA44f2NOXFm79bdbYsmjK5wJEKJUEBef2Q5TQ&s" width="180" height="120"alt=""  class="sweet">
+                </a>
+                <a href="#12">
+                    <img src="https://thumbs.dreamstime.com/b/delight-plate-indian-food-dosa-illustration-cuisine-spices-flavors-curry-rice-naan-298916398.jpg" width="180" height="120"alt=""  class="sweet">
+                </a>
+                
+                
+    
+                
+            </div>
+            
+            <div class="verticalContainer">
+                <div id="content" class="scrollable">
+                <div class="sweet-wrap" id="0">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c1" >RASAM </h3>
+                                    
+                                    <img src="graph.png" class="cloud">  
+                                    <img src="https://static.vecteezy.com/system/resources/thumbnails/024/061/972/small/aromatic-and-spicy-south-indian-rasam-soup-with-tamarind-and-lentils-ai-generated-free-photo.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                   
+                                    <div class="cloud1 d1" id="1"><br><span>$10.99</span> <br>A tangy spicy tomato soup elevated with red chillies,curry leaves and tamarind           </div>                       
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c2"  >PLAIN DOSA </h3>
+                                      
+                                        <img src="https://www.mrcoconut.in/img/products/22_11_2022_16_24_281_pm.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                        <img src="graph.png" class="cloud">
+                                        <div class="cloud1 d2" id="2"><br><span>$10.99</span> <br> Incredibly large thin crispy crepe</div>
+                                            
+                                            </div>                               
+                            </li>
+                        </ul>
+                        </div>
+                <div class="sweet-wrap">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c3" >GOBHI 65 DRY</h3>
+                                    
+                                    
+                                    <img src="https://img.freepik.com/premium-photo/gobi-manchurian-dry-popular-street-food-india-made-cauliflower-florets-selective-focus_466689-19790.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                    <img src="graph.png" class="cloud">     
+                                    <div class="cloud1 d3" id="3"><br><span>$10.99</span> <br>crispy deep-fried cauliflower florets coated in a tangy and fiery sauce 
+    
+                                    </div>   
+        
+                          
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c4" >PANEER 65($11.99)</h3>
+                                        
+                                        
+                                        <img src="https://lh3.googleusercontent.com/proxy/PdyEG7vTAEZkUXaPFobmxZcJ3kwHn53BT-j-EG88j79JPqqi39D6ziQlUq2H5EDsO0nhKJjLqu2EZqcpdZz8d0JoD2TtGZXsJRnZoDLuvkk-Ac48leIMe5EXSwIIKy3-8L47PQ" width="900" height="620" class="sweet" id="imageid" >
+                                        <!-- <img src="graph.png" class="cloud">     -->
+                                        <div  class="cloud1 d4" id="4"><br><span></span> <br></div>                           
+                            </li> 
+                        </ul>
+                        </div>
+                        <div class="sweet-wrap">
+                            <ul class="sweet__items">
+                                                    <li class="sweet__item">
+                                    <div class="food-sweet__item">
+                                        
+                                            <h3 class="food-sweet__title c5" >MASALA DOSA</h3>
+                                            
+                                            
+                                            <img src="https://static.vecteezy.com/system/resources/thumbnails/002/440/845/small_2x/crispy-masala-dosa-south-india-style-free-photo.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                            <img src="graph.png" class="cloud">      
+                                            <div  class="cloud1 d5" id="5"><br><span>$9.99</span> <br>Rice flour pancakes served with sambar, Chutney & stuffed inside with potatoes & onions  </div>                                                       
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="sweet-wrap">
+                                <ul class="sweet__items">
+                                                        <li class="sweet__item">
+                                        <div class="food-sweet__item">
+                                            
+                                                <h3 class="food-sweet__title c6" >MYSORE MASALA DOSA</h3>
+                                                
+                                                
+                                                <img src="https://www.palatesdesire.com/wp-content/uploads/2019/09/Mysore_Masala_Dosa@Palates_Desire-1024x738.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                <img src="graph.png" class="cloud">      
+                                                <div  class="cloud1 d6" id="6"><br><span>$10.99</span> <br>Crisp and soft dosa spiced with red chutney and served with a potato filling, along with coconut chutney </div>                                                       
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="sweet-wrap">
+                                    <ul class="sweet__items">
+                                                            <li class="sweet__item">
+                                            <div class="food-sweet__item">
+                                                
+                                                    <h3 class="food-sweet__title c7" >PAV BHAJI DOSA</h3>
+                                                    
+                                                    
+                                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/aa/75/73/pav-bhaji-dosa.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                    <img src="graph.png" class="cloud">      
+                                                    <div  class="cloud1 d7" id="7"><br><span>$11.99</span> <br> Crisp and soft dosa with pav bhaji filling served with coconut chutney</div>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="sweet-wrap">
+                                        <ul class="sweet__items">
+                                                                <li class="sweet__item">
+                                                <div class="food-sweet__item">
+                                                    
+                                                        <h3 class="food-sweet__title c8">GHEE MASALA DOSA</h3>
+                                                        
+                                                        
+                                                        <img src="https://miro.medium.com/v2/resize:fit:1358/0*tK5WNyP0GYXCf3cJ" width="900" height="620" class="sweet" id="imageid" >
+                                                        <img src="graph.png" class="cloud">      
+                                                        <div  class="cloud1 d8" id="8"><br><span>$11.99</span> <br> Crispy rice and lentil crepe and a spiced masala potato filling made in clarified butter </div>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                        
+                                            <div class="sweet-wrap">
+                                                <ul class="sweet__items">
+                                                                        <li class="sweet__item">
+                                                        <div class="food-sweet__item">
+                                                            
+                                                                <h3 class="food-sweet__title c9" >UTTAPAM</h3>
+                                                                
+                                                                
+                                                                <img src="https://media.istockphoto.com/id/609811304/photo/south-indian-food-uttapam-or-ooththappam-or-uthappa.jpg?s=612x612&w=0&k=20&c=mkFfxwamPGrcXHfPM8V_pA7EBs1SXNS7YvXBdFO_0xo=" width="900" height="620" class="sweet" id="imageid" >
+                                                                <img src="graph.png" class="cloud">      
+                                                                <div  class="cloud1 d9" id="10"><br><span>$9.99</span> <br> A thick soft version of the dosa, comforting like a savoury pancake with a few variations of lentils </div>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                                <div class="sweet-wrap">
+                                                    <ul class="sweet__items">
+                                                                            <li class="sweet__item">
+                                                            <div class="food-sweet__item">
+                                                                
+                                                                    <h3 class="food-sweet__title c10" >IDLI SAMBHAR - 3PCs </h3>
+                                                                    
+                                                                    
+                                                                    <img src="https://media.istockphoto.com/id/1303091964/photo/delicious-idly-south-indian-foods-background.jpg?s=612x612&w=0&k=20&c=qYvXZcumLrfZN9rWiQMKUWiDf4mw5tKCuNjAcEQGZuA=" width="900" height="620" class="sweet" id="imageid" >
+                                                                    <img src="graph.png" class="cloud">      
+                                                                    <div  class="cloud1 d10" id="11"><br><span>$6.99</span> <br>Cakes made by steaming a batter consisting of fermented black lentils and rice soaked in Sambhar  </div>
+                                                        </li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="sweet-wrap">
+                                                        <ul class="sweet__items">
+                                                                                <li class="sweet__item">
+                                                                <div class="food-sweet__item">
+                                                                    
+                                                                        <h3 class="food-sweet__title c11" >VADA SAMBHAR - 2PCs</h3>
+                                                                        
+                                                                        
+                                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn100GfNA44f2NOXFm79bdbYsmjK5wJEKJUEBef2Q5TQ&s" width="900" height="620" class="sweet" id="imageid" >
+                                                                        <img src="graph.png" class="cloud">      
+                                                                        <div  class="cloud1 d11" id="12"><br><span>$6.99</span> <br> Medhu vadas soaked in our sambar  </div>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+                                                        <div class="sweet-wrap">
+                                                            <ul class="sweet__items">
+                                                                                    <li class="sweet__item">
+                                                                    <div class="food-sweet__item">
+                                                                        
+                                                                            <h3 class="food-sweet__title c12" >PANEER DOSA($5.99)</h3>
+                                                                            
+                                                                            
+                                                                            <img src="https://thumbs.dreamstime.com/b/delight-plate-indian-food-dosa-illustration-cuisine-spices-flavors-curry-rice-naan-298916398.jpg" width="900" height="620" class="sweet" id="imageid"  >
+                                                                            <!-- <img src="graph.png" class="cloud">       -->
+                                                                            <div  class="cloud1 d12" id="13"><br><span></span> <br> </div>
+                                                                </li>
+                                                            </ul>
+                                                            </div>
+                                                        </div>
+                                                        <script>
+                                                             const horizontalImages = document.querySelectorAll('.horizontalContainer a img');
+            const sweetWraps = document.querySelectorAll('.food-sweet__item');
+            const scrollableElement = document.querySelector('.scrollable');
+
+            function handleScroll() {
+                let currentScroll = scrollableElement.scrollTop;
+                sweetWraps.forEach((sweetWrap, index) => {
+                  let sweetWrapTop = sweetWrap.offsetTop - (window.innerWidth < 700 ? 700 : 500);
+                  let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                  if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                    highlightHorizontalImage(index);
+                    scrollToHighlightedImage(horizontalImages[index]);
+                  }
+                });
+              }
+              
+         
+            scrollableElement.addEventListener('scroll', handleScroll);
+           
+            window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+                  sweetWraps.forEach((sweetWrap, index) => {
+                    let sweetWrapTop = sweetWrap.offsetTop - 500;
+                    let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                    if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                      highlightHorizontalImage(index);
+                      scrollToHighlightedImage(horizontalImages[index]);
+                    }
+                  });
+                });
+
+                function highlightHorizontalImage(index) {
+                    horizontalImages.forEach((image, i) => {
+                      if (i === index) {
+                        image.classList.add('highlighted');
+                      } else {
+                        image.classList.remove('highlighted');
+                      }
+                    });
+                  }
+                
+                function scrollToHighlightedImage(image) {
+                  image.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+
+
+                  
+              }
+              const translations = {
+              en: {
+                'HOME': 'HOME',
+                'ABOUTUS': 'ABOUT US',
+                'GALLERY': 'GALLERY',
+                'MENU': 'MENU',
+                'SWEETS': 'SWEETS',
+                'VIEW ALL': 'VIEW ALL',
+                'CONTACT US': 'CONTACT US',
+                'CHATPATTA CHAAT': 'CHATPATTA CHAAT',
+                'TIKKE-SHIKKE': 'TIKKE-SHIKKE',
+                'BURGER AND ROLLS': 'BURGER AND ROLLS',
+                'INDO CHINESE': 'INDO CHINESE',
+                'SOUTH INDIAN': 'SOUTH INDIAN',
+                'DESI CURRIES': 'DESI CURRIES',
+                'PARATHA AND NAAN': 'PARATHA AND NAAN',
+                'WE DESI COMBO': 'WE DESI COMBO',
+                'RICE': 'RICE',
+                'DRINKS': 'DRINKS',
+                'DESSERTS': 'DESSERTS',
+                'KIDS SPECIAL': 'KIDS SPECIAL',
+                'SIDES': 'SIDES',
+                'c1':"RASAM",
+                'c2': "PLAIN DOSA",
+                'c3': "GOBI 65 DRY",
+                'c4': "PANEER 65($11.99)",
+                'c5': "MASALA DOSA",
+                'c6': "MYSORE MASALA DOSA",
+                'c7': "PAV BHAJI DOSA",
+                'c8': "GHEE MASALA DOSA",
+                'c9':"UTTAPAM",
+                'c10':"IDLI SAMBHAR - 3PCs",
+                'c11':"VADA SAMBHAR - 2PCs",
+                'c12':"PANEER DOSA($5.99)",
+                "d1": "<br><span>$10.99</span> <br>A tangy spicy tomato soup elevated with red chillies,curry leaves and tamarind",
+    "d2": "<br><span>$10.99</span> <br>Incredibly large thin crispy crepe",
+    "d3": "<br><span>$10.99</span> <br>Crispy deep-fried cauliflower florets coated in a tangy and fiery sauce",
+    "d4": "<br><span></span> <br></div>",
+    "d5": "<br><span>$9.99</span> <br>Rice flour pancakes served with sambar, Chutney & stuffed inside with potatoes & onions",
+    "d6": "<br><span>$10.99</span> <br>Crisp and soft dosa spiced with red chutney and served with a potato filling, along with coconut chutney",
+    "d7": "<br><span>$11.99</span> <br>Crisp and soft dosa with pav bhaji filling served with coconut chutney",
+    "d8": "<br><span>$11.99</span> <br>Crispy rice and lentil crepe and a spiced masala potato filling made in clarified butter",
+    "d9": "<br><span>$9.99</span> <br>A thick soft version of the dosa, comforting like a savoury pancake with a few variations of lentils",
+    "d10": "<br><span>$6.99</span> <br>Cakes made by steaming a batter consisting of fermented black lentils and rice soaked in Sambhar",
+    "d11": "<br><span>$6.99</span> <br>Medhu vadas soaked in our sambar",
+    "d12": "<br><span></span> <br>"
+
+              },
+              fr: {
+                'HOME': 'ACCUEIL',
+                'ABOUTUS': 'À PROPOS DE NOUS',
+                'GALLERY': 'GALERIE',
+                'MENU': 'MENU',
+                'SWEETS': 'SUCRERIES',
+                'CONTACT US': 'NOUS CONTACTER',
+                'VIEW ALL': 'VOIR TOUT',
+                'CHATPATTA CHAAT': 'chat épicé ',
+                'TIKKE-SHIKKE': 'TIC SHIKKÉ ',
+                'BURGER AND ROLLS': 'BURGER ET ROULEAUX ',
+                'INDO CHINESE': 'INDO CHINOIS',
+                'SOUTH INDIAN': 'INDIEN DU SUD ',
+                'DESI CURRIES': 'CURRIES DESI',
+                'PARATHA AND NAAN': 'PARATHA ET NAAN',
+                'WE DESI COMBO': 'NOUS DESI COMBO',
+                'RICE': 'RIZ',
+                'DRINKS': 'BOISSONS',
+                'DESSERTS': 'LE DESSERTS',
+                'KIDS SPECIAL': 'SPÉCIAL ENFANTS ',
+                'SIDES': 'CÔTÉS',
+                'c1':"LE RASAM",
+                'c2': "DOSA PLAIN",
+                'c3': "GOBI 65 SEC",
+                'c4': "PANEER 65(11,99$)",
+                'c5': "MASALA DOSA",
+                'c6': "MYSORE MASALA DOSA",
+                'c7': "PAV BHAJI DOSA",
+                'c8': "GHEE MASALA DOSA",
+                'c9':"UTTAPAM",
+                'c10':"IDLI SAMBHAR - 3 pièces",
+                'c11':"VADA SAMBHAR - 2 pièces",
+                'c12':"PANEER DOSA(5,99$)",
+                "d1": "<br><span>$10.99</span> <br>Soupe épicée et acidulée à base de tomates, relevée avec des piments rouges, des feuilles de curry et du tamarin",
+    "d2": "<br><span>$10.99</span> <br>Crêpe fine incroyablement grande et croustillante",
+    "d3": "<br><span>$10.99</span> <br>Fleurs de chou-fleur frites croustillantes enrobées d'une sauce acidulée et épicée",
+    "d4": "<br><span></span> <br>",
+    "d5": "<br><span>$9.99</span> <br>Pancakes à la farine de riz servis avec du sambar, du chutney et farcis de pommes de terre et d'oignons",
+    "d6": "<br><span>$10.99</span> <br>Dosa croustillante et douce épicée avec du chutney rouge et servie avec une garniture de pommes de terre, accompagnée de chutney de coco",
+    "d7": "<br><span>$11.99</span> <br>Dosa croustillante et douce avec une garniture de pav bhaji servie avec du chutney de coco",
+    "d8": "<br><span>$11.99</span> <br>Crêpe croustillante de riz et de lentilles avec une garniture épicée de pommes de terre, cuite dans du beurre clarifié",
+    "d9": "<br><span>$9.99</span> <br>Une version épaisse et douce du dosa, réconfortante comme une crêpe salée avec quelques variations de lentilles",
+    "d10": "<br><span>$6.99</span> <br>Gâteaux faits en faisant cuire à la vapeur une pâte composée de lentilles noires fermentées et de riz trempé dans du Sambhar",
+    "d11": "<br><span>$6.99</span> <br>Medhu vadas trempés dans notre sambar",
+    "d12": "<br><span></span> <br>"
+              }
+            };
+            
+            document.addEventListener('DOMContentLoaded', () => {
+              const savedLanguage = localStorage.getItem('language') || 'en';
+              translatePage(savedLanguage);
+              document.body.classList.toggle('fr-mode', savedLanguage === 'fr');
+            
+              document.getElementById('btn-en').addEventListener('click', () => {
+                setLanguage('en');
+              });
+            
+              document.getElementById('btn-fr').addEventListener('click', () => {
+                setLanguage('fr');
+              });
+            });
+            
+            function setLanguage(lang) {
+              localStorage.setItem('language', lang);
+              translatePage(lang);
+              document.body.classList.toggle('fr-mode', lang === 'fr');
+            }
+            
+            function translatePage(lang) {
+              const elementsToTranslate = {
+                '.home-button': 'HOME',
+                '.aboutus-button': 'ABOUTUS',
+                '.gallery-button': 'GALLERY',
+                '.menu-button': 'MENU',
+                '.sweets-button': 'SWEETS',
+                '.contactus-button': 'CONTACT US',
+                '.view': 'VIEW ALL',
+                
+                '.s1': 'CHATPATTA CHAAT',
+                '.s2': 'TIKKE-SHIKKE',
+                '.s3': 'BURGER AND ROLLS',
+                '.s4': 'INDO CHINESE',
+                '.s5': 'SOUTH INDIAN',
+                '.s6': 'DESI CURRIES',
+                '.s7': 'PARATHA AND NAAN',
+                '.s8': 'WE DESI COMBO',
+                '.s9': 'RICE',
+                '.s10': 'DRINKS',
+                '.s11': 'DESSERTS',
+                '.s12': 'KIDS SPECIAL',
+                '.s13': 'SIDES',
+                '.food-sweet__title.c1': "c1",
+                '.food-sweet__title.c2': "c2",
+                '.food-sweet__title.c3': "c3",
+                '.food-sweet__title.c4': "c4",
+                '.food-sweet__title.c5': "c5",
+                '.food-sweet__title.c6': "c6",
+                '.food-sweet__title.c7': 'c7',
+                '.food-sweet__title.c8': "c8",
+                '.food-sweet__title.c9': "c9",
+                '.food-sweet__title.c10': "c10",
+                '.food-sweet__title.c11': "c11",
+                '.food-sweet__title.c12': "c12",
+                '.cloud1.d1': "d1",
+                '.cloud1.d2': "d2",
+                '.cloud1.d3': "d3",
+                '.cloud1.d4': "d4",
+                '.cloud1.d5': "d5",
+                '.cloud1.d6': "d6",
+                '.cloud1.d7': 'd7',
+                '.cloud1.d8': "d8",
+                '.cloud1.d9': "d9",
+                '.cloud1.d10': "d10",
+                '.cloud1.d11': "d11",
+                '.cloud1.d12': "d12",
+               
+                
+              };
+            
+              for (const [selector, key] of Object.entries(elementsToTranslate)) {
+                const element = document.querySelector(selector);
+                if (element) {
+                  element.innerHTML = translations[lang][key];
+                }
+              }
+            }
+                                                            </script>                                                    
+</body>
+
+</html>

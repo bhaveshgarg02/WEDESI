@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Wedesi-paranthas</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" 
+     type="image/png" 
+     href="logo1.png">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menu1.css">
+
+    <!-- <style>
+        body {
+            background: white;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .slider {
+            padding: 40px;
+            padding-left: 10%;
+            color: #fff;
+            margin-top: -70px;
+        }
+
+        .slider .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider__flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .slider__col {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        .slider__prev,
+        .slider__next {
+            cursor: pointer;
+            text-align: center;
+            color: aqua;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+        }
+
+        .slider__prev:focus,
+        .slider__next:focus {
+            outline: none;
+        }
+
+        .slider__thumbs {
+            height: calc(700px - 200px);
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        .slider__thumbs .slider__image {
+            transition: 0.25s;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+
+        .slider__thumbs .slider__image:hover {
+            opacity: 1;
+        }
+
+        .slider__thumbs .swiper-slide-thumb-active .slider__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .slider__images {
+            height: 600px;
+            overflow: hidden;
+            /* Add this line to hide overflow */
+        }
+
+        .slider__images .slider__image img {
+            transition: 3s;
+        }
+
+        .slider__images .slider__image:hover img {
+            transform: scale(1.1);
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .fancy-border-radius {
+            width: 47%;
+            height: 20%;
+            background: black;
+            position: absolute;
+            bottom: 0%;
+            right:0%;
+            margin-top: 45%;
+            z-index: 5;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            opacity: 0.8;
+            padding-left: 1%;
+        }
+
+        .ordernow button {
+            width: 20%;
+            height: 15%;
+            border: 0;
+            top: 20%;
+            margin-top: 40%;
+            position: absolute;
+            margin-left: 80%;
+            border-radius: 0px 0px 12px 0px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+            cursor: pointer;
+            color: #121212;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .ordernow button:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .content {
+            margin: 0;
+            margin-left: -1%;
+            font-size: 15px;
+            background-color: black;
+        }
+
+        .content h2 {
+            color: red;
+            margin: 0;
+            font-size: large;
+            margin-top: -5px;
+            background-color: transparent;
+        }
+
+        @media (max-width: 767.98px) {
+            .slider__flex {
+                flex-direction: column-reverse;
+            }
+
+            .slider__col {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .slider__images {
+                width: 100%;
+            }
+
+            .slider__thumbs {
+                height: 100px;
+                width: calc(100% - 96px);
+                margin: 0 16px;
+            }
+
+            .slider__prev,
+            .slider__next {
+                height: auto;
+                width: 32px;
+               
+            }
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <header >
+        <nav>
+          
+          <ul class="nav-bar ">
+         
+          <a href="we-desi-main-page.html" class="logo">
+           <img src= "logo.jpg" class="logo" height="91px" width="111px" align="left">
+          </a>
+          <input  type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="we-desi-main-page.html" class="style home-button">HOME</a></li>
+     <li><a href="we-desi-aboutus.html" class="style aboutus-button">ABOUT US</a></li>
+            <li><a href="we-desi-gallery.html"class="style gallery-button">GALLERY</a></li>
+            <li><a href="we-desi-menupage.html"class="style menu-button">MENU</a></li>
+            <li><a href="we-desi-sweets.html"class="style sweets-button">SWEETS</a></li>
+                <li><a href="we-desi-contactus.html"class="style contactus-button">CONTACT US</a></li>
+            </span>
+            <label for="check" class="open-menu"><a href="we-desi-menupage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></label>
+          </ul>
+          <div class="language-buttons">
+            <button id="btn-en">EN</button>
+            <button id="btn-fr">FR</button>
+        </div>
+        </nav>
+
+        <p class="menu1"> MENU > <span class="view">VIEW ALL > PARANTHA AND NAAN</span></p><br>
+
+        </header>
+        
+        <navbar-sidebar class="side">
+            <div class="list-left scrollmenu">
+                <ul class="ul-list">
+                    <li class="list-left-11 menu11">MENU</li>
+                    
+                <li  class="list-left-1"> <a href="chatpata-chaat.html" class="list-left-1 s1">chatpatta chaat</a></li>
+                <li  class="list-left-1"><a href="tikke.html" class="list-left-1 s2">tikke-shikke</a></li>
+                <li  class="list-left-1" ><a href="burger.html" class="list-left-1 s3">burger and rolls</a></li>
+                <li  class="list-left-1" ><a href="chinese.html" class="list-left-1 s4">indo chinese</a></li>
+                <li  class="list-left-1" ><a href="south.html" class="list-left-1 s5">south indian</a></li>
+                <li  class="list-left-1" ><a href="desi.html" class="list-left-1 s6">desi curries</a></li>
+                <li  class="list-left-1" ><a href="parantha.html" class="list-left-1 s7">parantha and naan</a></li>
+                <li  class="list-left-1 " ><a href="combo.html" class="list-left-1 s8">we desi combo</a></li>
+                <li  class="list-left-1" ><a href="rice.html" class="list-left-1 s9">rice</a></li>
+                <li  class="list-left-1" ><a href="drinks.html" class="list-left-1 s10">drinks</a></li>
+                <li  class="list-left-1" ><a href="dessert.html" class="list-left-1 s11">desserts</a></li>
+                <li  class="list-left-1" ><a href="kids.html"class="list-left-1 s12">kids special</a></li>
+                <li  class="list-left-1" ><a href="sides.html"class="list-left-1 s13">sides</a></li>
+                </ul>  
+                
+                </div>
+
+        </navbar-sidebar>
+  
+        
+            
+                <div  class="horizontalContainer thumb scroll slider"  >
+                <a href="#0">
+                    <img src="https://media.istockphoto.com/id/1418692758/photo/north-indian-famous-food-aloo-paratha-with-mango-pickle-and-butter.jpg?s=612x612&w=0&k=20&c=JDbBS-5EcSOKUeossLW2NufdKE0Mg7zFZV5ZBLdbpUE=" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#1">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/0*icMQYsUt7gFtqsAS" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#2">
+                    <img src="https://media.istockphoto.com/id/626072000/photo/gobi-paratha-or-cauliflower-parotha.jpg?s=612x612&w=0&k=20&c=ahOBJMu37J_SiLFy22H3No-E993iI8Y-IbdehD5CpX8=" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#3">
+                    <img src="https://media.istockphoto.com/id/1413566368/photo/indian-food-aloo-paratha-or-indian-potato-stuffed-flatbread-served-with-butter-pickle-and.jpg?s=612x612&w=0&k=20&c=hIqRXgQTFJ4Ta_Zh_JhOc_Okjk_yJUB--uDYIjifVCc=" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#4">
+                    <img src="https://i0.wp.com/lovelaughmirch.com/wp-content/uploads/2024/01/makki-ka-atta-2.jpg?ssl=1" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#5">
+                    <img src="https://pics.craiyon.com/2023-10-11/eea2c39c93ee4b3fb256054d84145d5a.webp" width="180" height="120" class="sweet">
+                </a>
+                <a href="#6">
+                    <img src="https://thumbs.dreamstime.com/b/making-cooking-indian-flat-bread-rumali-roti-chapathi-fulka-paratha-made-whole-wheat-lamboo-flour-maida-baked-jaipur-201042873.jpg" width="180" height="120" class="sweet">
+                </a>
+                <a href="#7">
+                    <img src="https://media.istockphoto.com/id/1292639257/photo/lachha-paratha-a-layered-flat-bread-using-wheat-flour-popular-dish-in-north-india-isolated.jpg?s=612x612&w=0&k=20&c=191DQkniSsyk2EGK4OxwvFHJpDFHnUdqLUJN89o3M5c=" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#8">
+                    <img src="https://media.istockphoto.com/id/183564340/photo/close-up-photograph-of-a-pile-of-plain-naan-flatbreads.jpg?s=612x612&w=0&k=20&c=mlcv58NxCe8svyVDg27zME9FZbTx9FaUGG0utxWGZVk=" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#9">
+                    <img src="https://onestophalal.com/cdn/shop/articles/kulcha_vs_naan-1701755334254_9f1c062a-4a4e-4909-9252-39d569af33f7_1200x.jpg?v=1701756090" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#10">
+                    <img src="https://static.toiimg.com/thumb/59633828.cms?imgsize=414000&width=800&height=800" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#11">
+                    <img src="https://crownresto.com/wp-content/uploads/2022/08/Tandoori-Roti-.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#12">
+                    <img src="https://flybuy.in/wp-content/uploads/2020/06/pnaan.png" width="180" height="120" class="sweet">
+                </a>
+                <a href="#13">
+                    <img src="https://thewhiskaddict.com/wp-content/uploads/2021/02/IMG_6493-1-scaled.jpg" width="180" height="120" class="sweet">
+                </a>
+                <a href="#14">
+                    <img src="https://lh5.googleusercontent.com/proxy/vTH2pIbYhB-oae5CbhOgjjXT0PFJ3F_-hs5idXv2gqeAJivCVs8ufE6KCaXiR4XunC4vgvlFHxGII-_-Qig2jjbmt99bkBf2900pYn632XKenMQhMprfm79GAgajYFUlnsC749Us9BODAXrggeIBfxpg12T3" width="180" height="120" class="sweet">
+                </a>
+                
+    
+                
+            </div>
+                <div class="verticalContainer">
+                <div id="content" class="scrollable">
+                <div class="sweet-wrap" id="0">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c1" >ALOO PARANTHA  </h3>
+                                    
+                                    <img src="graph.png" class="cloud">  
+                                    <img src="https://media.istockphoto.com/id/1418692758/photo/north-indian-famous-food-aloo-paratha-with-mango-pickle-and-butter.jpg?s=612x612&w=0&k=20&c=JDbBS-5EcSOKUeossLW2NufdKE0Mg7zFZV5ZBLdbpUE=" width="900" height="620" class="sweet" id="imageid" >
+                                   
+                                    <div class="cloud1 d1" id="1"><br><span>$2.99</span> <br> Whole wheat bread stuffed with masala potatoes and spices cooked on tawa and topped with butter         </div>                       
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c2"  >PANEER PARANTHA </h3>
+                                      
+                                        <img src="https://miro.medium.com/v2/resize:fit:1400/0*icMQYsUt7gFtqsAS" width="900" height="620" class="sweet" id="imageid" >
+                                        <img src="graph.png" class="cloud">
+                                        <div class="cloud1 d2" id="2"><br><span>$3.99</span> <br>Whole wheat bread stuffed with paneer, special spices   </div>
+                                            
+                                            </div>                               
+                            </li>
+                        </ul>
+                        </div>
+                <div class="sweet-wrap">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c3" >GOBHI PARANTHA</h3>
+                                    
+                                    
+                                    <img src="https://media.istockphoto.com/id/626072000/photo/gobi-paratha-or-cauliflower-parotha.jpg?s=612x612&w=0&k=20&c=ahOBJMu37J_SiLFy22H3No-E993iI8Y-IbdehD5CpX8=" width="900" height="620" class="sweet" id="imageid" >
+                                    <img src="graph.png" class="cloud">     
+                                    <div class="cloud1 d3" id="3"><br><span>$3.99</span> <br>Whole wheat bread stuffed with grated cauliflower and spices 
+                                    </div>   
+        
+                          
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c4" >MIX PARANTHA</h3>
+                                        
+                                        
+                                        <img src="https://media.istockphoto.com/id/1413566368/photo/indian-food-aloo-paratha-or-indian-potato-stuffed-flatbread-served-with-butter-pickle-and.jpg?s=612x612&w=0&k=20&c=hIqRXgQTFJ4Ta_Zh_JhOc_Okjk_yJUB--uDYIjifVCc=" width="900" height="620" class="sweet" id="imageid" >
+                                        <img src="graph.png" class="cloud">    
+                                        <div  class="cloud1 d4" id="4"><br><span>$3.99</span> <br>Whole wheat bread stuffed with paneer, potato,onion,home made spices </div>                           
+                            </li> 
+                        </ul>
+                        </div>
+                        <div class="sweet-wrap">
+                            <ul class="sweet__items">
+                                                    <li class="sweet__item">
+                                    <div class="food-sweet__item">
+                                        
+                                            <h3 class="food-sweet__title c5" >MAKKI DI ROTI</h3>
+                                            
+                                            
+                                            <img src="https://i0.wp.com/lovelaughmirch.com/wp-content/uploads/2024/01/makki-ka-atta-2.jpg?ssl=1" width="900" height="620" class="sweet" id="imageid" >
+                                            <img src="graph.png" class="cloud">      
+                                            <div  class="cloud1 d5" id="5"><br><span>$2.99</span> <br>Fatbread made with makki atta (maize flour) </div>                                                       
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="sweet-wrap">
+                                <ul class="sweet__items">
+                                                        <li class="sweet__item">
+                                        <div class="food-sweet__item">
+                                            
+                                                <h3 class="food-sweet__title c6" >TAWA ROTI</h3>
+                                                
+                                                
+                                                <img src="https://pics.craiyon.com/2023-10-11/eea2c39c93ee4b3fb256054d84145d5a.webp" width="900" height="620" class="sweet" id="imageid" >
+                                                <img src="graph.png" class="cloud">      
+                                                <div  class="cloud1 d6" id="6"><br><span>$1.99</span> <br>A charred whole wheat flour Indian bread that is soft  </div>                                                       
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="sweet-wrap">
+                                    <ul class="sweet__items">
+                                                            <li class="sweet__item">
+                                            <div class="food-sweet__item">
+                                                
+                                                    <h3 class="food-sweet__title c7" >RUMALI ROTI</h3>
+                                                    
+                                                    
+                                                    <img src="https://thumbs.dreamstime.com/b/making-cooking-indian-flat-bread-rumali-roti-chapathi-fulka-paratha-made-whole-wheat-lamboo-flour-maida-baked-jaipur-201042873.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                    <img src="graph.png" class="cloud">      
+                                                    <div  class="cloud1 d7" id="7"><br><span>$3.99</span> <br>Thin, soft flatbread that can be folded like a handkerchief </div>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                    <div class="sweet-wrap">
+                                        <ul class="sweet__items">
+                                                                <li class="sweet__item">
+                                                <div class="food-sweet__item">
+                                                    
+                                                        <h3 class="food-sweet__title c8" >LACHA PARANTHA</h3>
+                                                        
+                                                        
+                                                        <img src="https://media.istockphoto.com/id/1292639257/photo/lachha-paratha-a-layered-flat-bread-using-wheat-flour-popular-dish-in-north-india-isolated.jpg?s=612x612&w=0&k=20&c=191DQkniSsyk2EGK4OxwvFHJpDFHnUdqLUJN89o3M5c=" width="900" height="620" class="sweet" id="imageid" >
+                                                        <img src="graph.png" class="cloud">      
+                                                        <div  class="cloud1 d8" id="8"><br><span>$3.99</span> <br>Crispy flaky layered whole wheat flatbreads     </div>
+                                            </li>
+                                        </ul>
+                                        </div>
+                                        <div class="sweet-wrap">
+                                            <ul class="sweet__items">
+                                                                    <li class="sweet__item">
+                                                    <div class="food-sweet__item">
+                                                        
+                                                            <h3 class="food-sweet__title c9" >PANEER NAAN</h3>
+                                                            
+                                                            
+                                                            <img src="https://media.istockphoto.com/id/183564340/photo/close-up-photograph-of-a-pile-of-plain-naan-flatbreads.jpg?s=612x612&w=0&k=20&c=mlcv58NxCe8svyVDg27zME9FZbTx9FaUGG0utxWGZVk=" width="900" height="620" class="sweet" id="imageid" >
+                                                            <img src="graph.png" class="cloud">      
+                                                            <div  class="cloud1 d9" id="9"><br><span>$3.99</span> <br>Naan stuffed withHome made paneer ,sepcial spices </div>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                            <div class="sweet-wrap">
+                                                <ul class="sweet__items">
+                                                                        <li class="sweet__item">
+                                                        <div class="food-sweet__item">
+                                                            
+                                                                <h3 class="food-sweet__title c10" >ONION KULCHA</h3>
+                                                                
+                                                                
+                                                                <img src="https://onestophalal.com/cdn/shop/articles/kulcha_vs_naan-1701755334254_9f1c062a-4a4e-4909-9252-39d569af33f7_1200x.jpg?v=1701756090" width="900" height="620" class="sweet" id="imageid" >
+                                                                <img src="graph.png" class="cloud">      
+                                                                <div  class="cloud1 d10" id="10"><br><span>$2.99</span> <br> Indian bread stuffed with onion,coriander and spices</div>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                                <div class="sweet-wrap">
+                                                    <ul class="sweet__items">
+                                                                            <li class="sweet__item">
+                                                            <div class="food-sweet__item">
+                                                                
+                                                                    <h3 class="food-sweet__title c11" >WeDesi Spl Mawa Kulcha</h3>
+                                                                    
+                                                                    
+                                                                    <img src="https://static.toiimg.com/thumb/59633828.cms?imgsize=414000&width=800&height=800" width="900" height="620" class="sweet" id="imageid" >
+                                                                    <img src="graph.png" class="cloud">      
+                                                                    <div  class="cloud1 d11" id="11"><br><span>$4.99</span> <br> Sweet naan bread stuffed with dry fruits</div>
+                                                        </li>
+                                                    </ul>
+                                                    </div>
+                                                    <div class="sweet-wrap">
+                                                        <ul class="sweet__items">
+                                                                                <li class="sweet__item">
+                                                                <div class="food-sweet__item">
+                                                                    
+                                                                        <h3 class="food-sweet__title c12" >TANDOORI ROTI</h3>
+                                                                        
+                                                                        
+                                                                        <img src="https://crownresto.com/wp-content/uploads/2022/08/Tandoori-Roti-.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                        <img src="graph.png" class="cloud">      
+                                                                        <div  class="cloud1 d12" id="12"><br><span>$1.99</span> <br>Whole wheat bread baked in the Tandoor </div>
+                                                            </li>
+                                                        </ul>
+                                                        </div>
+                                                        <div class="sweet-wrap">
+                                                            <ul class="sweet__items">
+                                                                                    <li class="sweet__item">
+                                                                    <div class="food-sweet__item">
+                                                                        
+                                                                            <h3 class="food-sweet__title c13" >PLAIN NAAN</h3>
+                                                                            
+                                                                            
+                                                                            <img src="https://flybuy.in/wp-content/uploads/2020/06/pnaan.png" width="900" height="620" class="sweet" id="imageid" >
+                                                                            <img src="graph.png" class="cloud">      
+                                                                            <div  class="cloud1 d13" id="13"><br><span>$1.99</span> <br> Indian bread Made with milk, salt, baking powder</div>
+                                                                </li>
+                                                            </ul>
+                                                            </div>
+                                                            <div class="sweet-wrap">
+                                                                <ul class="sweet__items">
+                                                                                        <li class="sweet__item">
+                                                                        <div class="food-sweet__item">
+                                                                            
+                                                                                <h3 class="food-sweet__title c14" >GARLIC NAAN</h3>
+                                                                                
+                                                                                
+                                                                                <img src="https://thewhiskaddict.com/wp-content/uploads/2021/02/IMG_6493-1-scaled.jpg" width="900" height="620" class="sweet" id="imageid" >
+                                                                                <img src="graph.png" class="cloud">      
+    
+                                                                                <div  class="cloud1 d14" id="14"><br><span>$2.99</span> <br>  Indian bread Made with milk, salt, baking powder and garlic</div>
+                                                                    </li>
+                                                                </ul>
+                                                                </div>
+                                                                <div class="sweet-wrap">
+                                                                    <ul class="sweet__items">
+                                                                                            <li class="sweet__item">
+                                                                            <div class="food-sweet__item">
+                                                                                
+                                                                                    <h3 class="food-sweet__title c15" >BREAD BASKET</h3>
+                                                                                    
+                                                                                    
+                                                                                    <img src="https://lh5.googleusercontent.com/proxy/vTH2pIbYhB-oae5CbhOgjjXT0PFJ3F_-hs5idXv2gqeAJivCVs8ufE6KCaXiR4XunC4vgvlFHxGII-_-Qig2jjbmt99bkBf2900pYn632XKenMQhMprfm79GAgajYFUlnsC749Us9BODAXrggeIBfxpg12T3" width="900" height="620" class="sweet" id="imageid" >
+                                                                                    <img src="graph.png" class="cloud">      
+    
+                                                                                    <div  class="cloud1 d15" id="15"><br><span>$9.99</span> <br>Naan, Garlic Naan, Roti, Lacha Prantha
+                                                                                    </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                    </div>
+                                
+        
+            </div>
+            </div>
+            
+            
+            <script>
+               const horizontalImages = document.querySelectorAll('.horizontalContainer a img');
+            const sweetWraps = document.querySelectorAll('.food-sweet__item');
+            const scrollableElement = document.querySelector('.scrollable');
+
+            function handleScroll() {
+                let currentScroll = scrollableElement.scrollTop;
+                sweetWraps.forEach((sweetWrap, index) => {
+                  let sweetWrapTop = sweetWrap.offsetTop - (window.innerWidth < 700 ? 700 : 500);
+                  let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                  if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                    highlightHorizontalImage(index);
+                    scrollToHighlightedImage(horizontalImages[index]);
+                  }
+                });
+              }
+              
+         
+            scrollableElement.addEventListener('scroll', handleScroll);
+           
+            window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+                  sweetWraps.forEach((sweetWrap, index) => {
+                    let sweetWrapTop = sweetWrap.offsetTop - 500;
+                    let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                    if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                      highlightHorizontalImage(index);
+                      scrollToHighlightedImage(horizontalImages[index]);
+                    }
+                  });
+                });
+
+                function highlightHorizontalImage(index) {
+                    horizontalImages.forEach((image, i) => {
+                      if (i === index) {
+                        image.classList.add('highlighted');
+                      } else {
+                        image.classList.remove('highlighted');
+                      }
+                    });
+                  }
+                
+                function scrollToHighlightedImage(image) {
+                  image.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+              }
+
+
+              const translations = {
+              en: {
+                'HOME': 'HOME',
+                'ABOUTUS': 'ABOUT US',
+                'GALLERY': 'GALLERY',
+                'MENU': 'MENU',
+                'SWEETS': 'SWEETS',
+                'VIEW ALL': 'VIEW ALL',
+                'CONTACT US': 'CONTACT US',
+                'CHATPATTA CHAAT': 'CHATPATTA CHAAT',
+                'TIKKE-SHIKKE': 'TIKKE-SHIKKE',
+                'BURGER AND ROLLS': 'BURGER AND ROLLS',
+                'INDO CHINESE': 'INDO CHINESE',
+                'SOUTH INDIAN': 'SOUTH INDIAN',
+                'DESI CURRIES': 'DESI CURRIES',
+                'PARATHA AND NAAN': 'PARATHA AND NAAN',
+                'WE DESI COMBO': 'WE DESI COMBO',
+                'RICE': 'RICE',
+                'DRINKS': 'DRINKS',
+                'DESSERTS': 'DESSERTS',
+                'KIDS SPECIAL': 'KIDS SPECIAL',
+                'SIDES': 'SIDES',
+                'c1':"ALOO PARANTHA",
+                'c2': "PANEER PARANTHA",
+                'c3': "GOBHI PARANTHA",
+                'c4': "MIX PARANTHA",
+                'c5': "MAKKI DI ROTI",
+                'c6': "TAWA ROTI",
+                'c7': "RUMALI ROTI",
+                'c8': "LACHA PARANTHA",
+                'c9': "PANEER NAAN",
+                'c10':"ONION KULCHA",
+                'c11':"WeDesi Spl Mawa Kulcha",
+                'c12':"TANDOORI ROTI",
+                'c13':"PLAIN NAAN",
+                'c14':"GARLIC NAAN",
+                'c15':"BREAD BASKET",
+                'd1': '<br><span>$2.99</span> <br> Whole wheat bread stuffed with masala potatoes and spices cooked on tawa and topped with butter',
+'d2': '<br><span>$3.99</span> <br>Whole wheat bread stuffed with paneer, special spices',
+'d3': '<br><span>$3.99</span> <br>Whole wheat bread stuffed with grated cauliflower and spices',
+'d4': '<br><span>$3.99</span> <br>Whole wheat bread stuffed with paneer, potato, onion, homemade spices',
+'d5': '<br><span>$2.99</span> <br>Flatbread made with makki atta (maize flour)',
+'d6': '<br><span>$1.99</span> <br>A charred whole wheat flour Indian bread that is soft',
+'d7': '<br><span>$3.99</span> <br>A thin, soft flatbread that can be folded like a handkerchief',
+'d8': '<br><span>$3.99</span> <br>Crispy flaky layered whole wheat flatbreads',
+'d9': '<br><span>$3.99</span> <br>Naan stuffed with homemade paneer, special spices',
+'d10': '<br><span>$2.99</span> <br>Indian bread stuffed with onion, coriander and spices',
+'d11': '<br><span>$4.99</span> <br>Sweet naan bread stuffed with dry fruits',
+'d12': '<br><span>$1.99</span> <br>Whole wheat bread baked in the Tandoor',
+'d13': '<br><span>$1.99</span> <br>Indian bread made with milk, salt, baking powder',
+'d14': '<br><span>$2.99</span> <br>Indian bread made with milk, salt, baking powder and garlic',
+'d15': '<br><span>$9.99</span> <br>Naan, Garlic Naan, Roti, Lacha Prantha',
+
+              },
+              fr: {
+                'HOME': 'ACCUEIL',
+                'ABOUTUS': 'À PROPOS DE NOUS',
+                'GALLERY': 'GALERIE',
+                'MENU': 'MENU',
+                'SWEETS': 'SUCRERIES',
+                'CONTACT US': 'NOUS CONTACTER',
+                'VIEW ALL': 'VOIR TOUT',
+                'CHATPATTA CHAAT': 'chat épicé ',
+                'TIKKE-SHIKKE': 'TIC SHIKKÉ ',
+                'BURGER AND ROLLS': 'BURGER ET ROULEAUX ',
+                'INDO CHINESE': 'INDO CHINOIS',
+                'SOUTH INDIAN': 'INDIEN DU SUD ',
+                'DESI CURRIES': 'CURRIES DESI',
+                'PARATHA AND NAAN': 'PARATHA ET NAAN',
+                'WE DESI COMBO': 'NOUS DESI COMBO',
+                'RICE': 'RIZ',
+                'DRINKS': 'BOISSONS',
+                'DESSERTS': 'LE DESSERTS',
+                'KIDS SPECIAL': 'SPÉCIAL ENFANTS ',
+                'SIDES': 'CÔTÉS',
+                'c1':"LE ALOO PARANTHA",
+                'c2':"PANEER PARANTHA",
+                'c3':"GOBHI PARANTHA",
+                'c4':"MÉLANGER PARANTHA",
+                'c5':"MAKKI DI ROTI",
+                'c6':"TAWA ROTI",
+                'c7':"RUMALI ROTI",
+                'c8':"LACHA PARANTHA",
+                'c9':"PANEER NAAN",
+                'c10':"OIGNON KULCHA",
+                'c11':"WeDesi Spl Mawa Kulcha",
+                'c12':"TANDOORI ROTI",
+                'c13':"NAAN PLAIN",
+                'c14':"NAAN À L'AIL",
+                'c15':"PANIER A PAIN",
+                'd1': '<br><span>$2.99</span> <br> Pain de blé complet farci de pommes de terre masala et épices cuit sur tawa et garni de beurre',
+'d2': '<br><span>$3.99</span> <br>Pain de blé complet farci de paneer, épices spéciales',
+'d3': '<br><span>$3.99</span> <br>Pain de blé complet farci de chou-fleur râpé et épices',
+'d4': '<br><span>$3.99</span> <br>Pain de blé complet farci de paneer, pomme de terre, oignon, épices maison',
+'d5': '<br><span>$2.99</span> <br>Pain plat fait avec de la farine de maïs (makki atta)',
+'d6': '<br><span>$1.99</span> <br>Un pain de blé entier cuit au tandoor, tendre et moelleux',
+'d7': '<br><span>$3.99</span> <br>Pain plat fin et moelleux qui peut être plié comme un mouchoir',
+'d8': '<br><span>$3.99</span> <br>Pains plats de blé entier croustillants et en couches',
+'d9': '<br><span>$3.99</span> <br>Naan farci de paneer maison, épices spéciales',
+'d10': '<br><span>$2.99</span> <br>Pain indien farci doignons, coriandre et épices',
+'d11': '<br><span>$4.99</span> <br>Naan sucré farci de fruits secs',
+'d12': '<br><span>$1.99</span> <br>Pain de blé complet cuit dans le tandoor',
+'d13': '<br><span>$1.99</span> <br>Pain indien fait avec du lait, du sel, de la levure chimique',
+'d14': '<br><span>$2.99</span> <br>Pain indien fait avec du lait, du sel, de la levure chimique et de lail',
+'d15': '<br><span>$9.99</span> <br>Naan, Naan à lail, Roti, Lacha Prantha',
+
+
+              }
+            };
+            
+            document.addEventListener('DOMContentLoaded', () => {
+              const savedLanguage = localStorage.getItem('language') || 'en';
+              translatePage(savedLanguage);
+              document.body.classList.toggle('fr-mode', savedLanguage === 'fr');
+            
+              document.getElementById('btn-en').addEventListener('click', () => {
+                setLanguage('en');
+              });
+            
+              document.getElementById('btn-fr').addEventListener('click', () => {
+                setLanguage('fr');
+              });
+            });
+            
+            function setLanguage(lang) {
+              localStorage.setItem('language', lang);
+              translatePage(lang);
+              document.body.classList.toggle('fr-mode', lang === 'fr');
+            }
+            
+            function translatePage(lang) {
+              const elementsToTranslate = {
+                '.home-button': 'HOME',
+                '.aboutus-button': 'ABOUTUS',
+                '.gallery-button': 'GALLERY',
+                '.menu-button': 'MENU',
+                '.sweets-button': 'SWEETS',
+                '.contactus-button': 'CONTACT US',
+                '.view': 'VIEW ALL',
+                
+                '.s1': 'CHATPATTA CHAAT',
+                '.s2': 'TIKKE-SHIKKE',
+                '.s3': 'BURGER AND ROLLS',
+                '.s4': 'INDO CHINESE',
+                '.s5': 'SOUTH INDIAN',
+                '.s6': 'DESI CURRIES',
+                '.s7': 'PARATHA AND NAAN',
+                '.s8': 'WE DESI COMBO',
+                '.s9': 'RICE',
+                '.s10': 'DRINKS',
+                '.s11': 'DESSERTS',
+                '.s12': 'KIDS SPECIAL',
+                '.s13': 'SIDES',
+                '.food-sweet__title.c1': "c1",
+                '.food-sweet__title.c2': "c2",
+                '.food-sweet__title.c3': "c3",
+                '.food-sweet__title.c4': "c4",
+                '.food-sweet__title.c5': "c5",
+                '.food-sweet__title.c6': "c6",
+                '.food-sweet__title.c7': 'c7',
+                '.food-sweet__title.c8': "c8",
+                '.food-sweet__title.c9': "c9",
+                '.food-sweet__title.c10': "c10",
+                '.food-sweet__title.c11': "c11",
+                '.food-sweet__title.c12': "c12",
+                '.food-sweet__title.c13': "c13",
+                '.food-sweet__title.c14': "c14",
+                '.food-sweet__title.c15': "c15",
+                '.cloud1.d1': "d1",
+                '.cloud1.d2':  "d2",
+                '.cloud1.d3':  "d3",
+                '.cloud1.d4':  "d4",
+                '.cloud1.d5':  "d5",
+                '.cloud1.d6':  "d6",
+                '.cloud1.d7':  "d7",
+                '.cloud1.d8':  "d8",
+                '.cloud1.d9':  "d9",
+                '.cloud1.d10': "d10",
+                '.cloud1.d11': "d11",
+                '.cloud1.d12': "d12",
+                '.cloud1.d13': "d13",
+                '.cloud1.d14': "d14",
+                '.cloud1.d15': "d15",
+
+                
+              };
+            
+              for (const [selector, key] of Object.entries(elementsToTranslate)) {
+                const element = document.querySelector(selector);
+                if (element) {
+                  element.innerHTML = translations[lang][key];
+                }
+              }
+            }
+    
+            </script>
+</body>
+
+</html>

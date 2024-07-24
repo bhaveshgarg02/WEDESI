@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+
+    <title>Wedesi-combo</title>
+    <link rel="icon" 
+     type="image/png" 
+     href="logo1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="menu1.css">
+    <!-- <style>
+        body {
+            background: white;
+            font-family: "Poppins",sans-serif;
+        }
+
+        .slider {
+            padding: 40px;
+            padding-left: 10%;
+            color: #fff;
+            margin-top: -70px;
+        }
+
+        .slider .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider__flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .slider__col {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            margin-right: 30px;
+        }
+
+        .slider__prev,
+        .slider__next {
+            cursor: pointer;
+            text-align: center;
+            color: aqua;
+            font-size: 14px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin-left: 20px;
+        }
+
+        .slider__prev:focus,
+        .slider__next:focus {
+            outline: none;
+        }
+
+        .slider__thumbs {
+            height: calc(700px - 200px);
+            overflow: hidden;
+            margin-left: 5%;
+        }
+
+        .slider__thumbs .slider__image {
+            transition: 0.25s;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            opacity: 0.5;
+        }
+
+        .slider__thumbs .slider__image:hover {
+            opacity: 1;
+        }
+
+        .slider__thumbs .swiper-slide-thumb-active .slider__image {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .slider__images {
+            height: 600px;
+            overflow: hidden;
+            /* Add this line to hide overflow */
+        }
+
+        .slider__images .slider__image img {
+            transition: 3s;
+        }
+
+        .slider__images .slider__image:hover img {
+            transform: scale(1.1);
+        }
+
+        .slider__image {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .slider__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .fancy-border-radius {
+            width: 47%;
+            height: 20%;
+            background: black;
+            position: absolute;
+            bottom: 0%;
+            right:0%;
+            margin-top: 45%;
+            z-index: 5;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            opacity: 0.8;
+            padding-left: 1%;
+        }
+
+        .ordernow button {
+            width: 20%;
+            height: 15%;
+            border: 0;
+            top: 20%;
+            margin-top: 40%;
+            position: absolute;
+            margin-left: 80%;
+            border-radius: 0px 0px 12px 0px;
+            opacity: 0.9;
+            flex-wrap: wrap;
+            cursor: pointer;
+            color: #121212;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .ordernow button:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+
+        .content {
+            margin: 0;
+            margin-left: -1%;
+            font-size: 15px;
+            background-color: black;
+        }
+
+        .content h2 {
+            color: red;
+            margin: 0;
+            font-size: large;
+            margin-top: -5px;
+            background-color: transparent;
+        }
+
+        @media (max-width: 767.98px) {
+            .slider__flex {
+                flex-direction: column-reverse;
+            }
+
+            .slider__col {
+                flex-direction: row;
+                align-items: center;
+                margin-right: 0;
+                margin-top: 24px;
+                width: 100%;
+            }
+
+            .slider__images {
+                width: 100%;
+            }
+
+            .slider__thumbs {
+                height: 100px;
+                width: calc(100% - 96px);
+                margin: 0 16px;
+            }
+
+            .slider__prev,
+            .slider__next {
+                height: auto;
+                width: 32px;
+               
+            }
+        }
+
+    </style> -->
+</head>
+
+<body>
+    <header >
+        <nav>
+          
+          <ul class="nav-bar ">
+         
+          <a href="we-desi-main-page.html" class="logo">
+           <img src= "logo.jpg" class="logo" height="91px" width="111px" align="left">
+          </a>
+          <input  type="checkbox" id="check" />
+          <span class="menu">
+            <li><a href="we-desi-main-page.html" class="style home-button">HOME</a></li>
+     <li><a href="we-desi-aboutus.html" class="style aboutus-button">ABOUT US</a></li>
+            <li><a href="we-desi-gallery.html"class="style gallery-button">GALLERY</a></li>
+            <li><a href="we-desi-menupage.html"class="style menu-button">MENU</a></li>
+            <li><a href="we-desi-sweets.html"class="style sweets-button">SWEETS</a></li>
+                <li><a href="we-desi-contactus.html"class="style contactus-button">CONTACT US</a></li>
+            </span>
+            <label for="check" class="open-menu"><a href="we-desi-menupage.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></label>
+          </ul>
+          <div class="language-buttons">
+            <button id="btn-en">EN</button>
+            <button id="btn-fr">FR</button>
+        </div>
+        </nav>
+        <p class="menu1" > MENU > <span class="view">VIEW ALL > SPL COMBOS</span></p><br>
+
+        </header>
+        <navbar-sidebar class="side">
+            <div class="list-left scrollmenu">
+                <ul class="ul-list">
+                    <li class="list-left-11 menu11">MENU</li>
+                    
+                <li  class="list-left-1"> <a href="chatpata-chaat.html" class="list-left-1 s1">chatpatta chaat</a></li>
+                <li  class="list-left-1"><a href="tikke.html" class="list-left-1 s2">tikke-shikke</a></li>
+                <li  class="list-left-1" ><a href="burger.html" class="list-left-1 s3">burger and rolls</a></li>
+                <li  class="list-left-1" ><a href="chinese.html" class="list-left-1 s4">indo chinese</a></li>
+                <li  class="list-left-1" ><a href="south.html" class="list-left-1 s5">south indian</a></li>
+                <li  class="list-left-1" ><a href="desi.html" class="list-left-1 s6">desi curries</a></li>
+                <li  class="list-left-1" ><a href="parantha.html" class="list-left-1 s7">parantha and naan</a></li>
+                <li  class="list-left-1 " ><a href="combo.html" class="list-left-1 s8">we desi combo</a></li>
+                <li  class="list-left-1" ><a href="rice.html" class="list-left-1 s9">rice</a></li>
+                <li  class="list-left-1" ><a href="drinks.html" class="list-left-1 s10">drinks</a></li>
+                <li  class="list-left-1" ><a href="dessert.html" class="list-left-1 s11">desserts</a></li>
+                <li  class="list-left-1" ><a href="kids.html"class="list-left-1 s12">kids special</a></li>
+                <li  class="list-left-1" ><a href="sides.html"class="list-left-1 s13">sides</a></li>
+                </ul>  
+                
+                </div>
+
+        </navbar-sidebar>
+        
+      
+                <div  class="horizontalContainer thumb scroll slider"   >
+                <a href="#0">
+                    <img src="https://5.imimg.com/data5/XF/GT/XN/IOS-61267510/thali-meal-.jpeg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#1">
+                    <img src="https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#2">
+                    <img src="https://thefoodscape.files.wordpress.com/2016/04/img_05751.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#3">
+                    <img src="https://images.herzindagi.info/image/2022/Nov/best-places-eat-sarson-ka-saag-and-makki-roti-in-chandigarh.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#4">
+                    <img src="https://healthynibblesandbits.com/wp-content/uploads/2019/07/Paneer-Tikka-Masala-FF3-500x500.jpg" width="180" height="120" class="sweet" >  
+                </a>
+                <a href="#5">
+                    <img src="https://i.ytimg.com/vi/CrNPjkveQOU/hqdefault.jpg" width="180" height="120"alt="" class="sweet"/>
+                </a>
+                
+    
+                
+            </div>
+            
+                <div class="verticalContainer">
+                <div id="content" class="scrollable">
+                <div class="sweet-wrap" id="0">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c1" >VEG THALI </h3>
+                                    
+                                    <img src="graph.png" class="cloud">  
+                                    <img src="https://5.imimg.com/data5/XF/GT/XN/IOS-61267510/thali-meal-.jpeg" width="900" height="620" class="sweet" >
+                                   
+                                    <div class="cloud1 d1" id="1"><br><span>$9.99</span> <br>  Chef’s choice of 3 vegetables served with rice, naan and bread          </div>                       
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c2"  > RAJMA RICE</h3>
+                                      
+                                        <img src="https://www.secondrecipe.com/wp-content/uploads/2017/08/rajma-chawal-1.jpg" width="900" height="620" class="sweet" >
+                                        <img src="graph.png" class="cloud">
+                                        <div class="cloud1 d2" id="2"><br><span>$9.99</span> <br>Punajbi style rajma served with basmati rice </div>
+                                            
+                                            </div>                               
+                            </li>
+                        </ul>
+                        </div>
+                <div class="sweet-wrap">
+                    <ul class="sweet__items">
+                                            <li class="sweet__item">
+                            <div class="food-sweet__item">
+                                
+                                    <h3 class="food-sweet__title c3" >KADHI RICE</h3>
+                                    
+                                    
+                                    <img src="https://thefoodscape.files.wordpress.com/2016/04/img_05751.jpg" width="900" height="620" class="sweet" >
+                                    <img src="graph.png" class="cloud">     
+                                    <div class="cloud1 d3" id="3"><br><span>$9.99</span> <br>Punjabi style kadhi served with basmati rice 
+                                    </div>   
+        
+                          
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="sweet-wrap">
+                        <ul class="sweet__items">
+                                                <li class="sweet__item">
+                                <div class="food-sweet__item">
+                                    
+                                        <h3 class="food-sweet__title c4" >MAKKI DI ROTI WITH SAAG</h3>
+                                        
+                                        
+                                        <img src="https://images.herzindagi.info/image/2022/Nov/best-places-eat-sarson-ka-saag-and-makki-roti-in-chandigarh.jpg" width="900" height="620" class="sweet" >
+                                        <img src="graph.png" class="cloud">    
+                                        <div  class="cloud1 d4" id="4"><br><span>$9.99</span> <br>Steaming hot makki roti with a dollop of butter or ghee served with Saag</div>                           
+                            </li> 
+                        </ul>
+                        </div>
+                        <div class="sweet-wrap">
+                            <ul class="sweet__items">
+                                                    <li class="sweet__item">
+                                    <div class="food-sweet__item">
+                                        
+                                            <h3 class="food-sweet__title c5" >PANEER TIKKA RICE BOWL</h3>
+                                            
+                                            
+                                            <img src="https://healthynibblesandbits.com/wp-content/uploads/2019/07/Paneer-Tikka-Masala-FF3-500x500.jpg" width="900" height="620" class="sweet" >
+                                            <img src="graph.png" class="cloud">      
+                                            <div  class="cloud1 d5" id="5"><br><span>$11.99</span> <br>                                        Basmati rice, paneer tikka, butter sauce and fresh greens
+                                            </div>                                                       
+                                </li>
+                            </ul>
+                            </div>
+                            <div class="sweet-wrap">
+                                <ul class="sweet__items">
+                                                        <li class="sweet__item">
+                                        <div class="food-sweet__item">
+                                            
+                                                <h3 class="food-sweet__title c6" >TIKKA COMBO</h3>
+                                                
+                                                
+                                                <img src="https://i.ytimg.com/vi/CrNPjkveQOU/hqdefault.jpg" width="900" height="620" class="sweet" >
+                                                <img src="graph.png" class="cloud">      
+                                                <div  class="cloud1 d6" id="6"><br><span>$14.99</span> <br>Your choice of any 2 tandoori items in one platter </div>                                                       
+                                    </li>
+                                </ul>
+                                </div>
+                                
+                                
+            </div>
+            <script>
+                const horizontalImages = document.querySelectorAll('.horizontalContainer a img');
+            const sweetWraps = document.querySelectorAll('.food-sweet__item');
+            const scrollableElement = document.querySelector('.scrollable');
+
+            function handleScroll() {
+                let currentScroll = scrollableElement.scrollTop;
+                sweetWraps.forEach((sweetWrap, index) => {
+                  let sweetWrapTop = sweetWrap.offsetTop - (window.innerWidth < 700 ? 700 : 500);
+                  let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                  if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                    highlightHorizontalImage(index);
+                    scrollToHighlightedImage(horizontalImages[index]);
+                  }
+                });
+              }
+              
+         
+            scrollableElement.addEventListener('scroll', handleScroll);
+           
+            window.addEventListener('scroll', () => {
+                  let currentScroll = window.scrollY;
+                  sweetWraps.forEach((sweetWrap, index) => {
+                    let sweetWrapTop = sweetWrap.offsetTop - 500;
+                    let sweetWrapBottom = sweetWrapTop + sweetWrap.offsetHeight;
+                    if (currentScroll >= sweetWrapTop && currentScroll < sweetWrapBottom) {
+                      highlightHorizontalImage(index);
+                      scrollToHighlightedImage(horizontalImages[index]);
+                    }
+                  });
+                });
+
+                function highlightHorizontalImage(index) {
+                    horizontalImages.forEach((image, i) => {
+                      if (i === index) {
+                        image.classList.add('highlighted');
+                      } else {
+                        image.classList.remove('highlighted');
+                      }
+                    });
+                  }
+                
+                function scrollToHighlightedImage(image) {
+                  image.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
+              }
+
+              const translations = {
+              en: {
+                'HOME': 'HOME',
+                'ABOUTUS': 'ABOUT US',
+                'GALLERY': 'GALLERY',
+                'MENU': 'MENU',
+                'SWEETS': 'SWEETS',
+                'VIEW ALL': 'VIEW ALL',
+                'CONTACT US': 'CONTACT US',
+                'CHATPATTA CHAAT': 'CHATPATTA CHAAT',
+                'TIKKE-SHIKKE': 'TIKKE-SHIKKE',
+                'BURGER AND ROLLS': 'BURGER AND ROLLS',
+                'INDO CHINESE': 'INDO CHINESE',
+                'SOUTH INDIAN': 'SOUTH INDIAN',
+                'DESI CURRIES': 'DESI CURRIES',
+                'PARATHA AND NAAN': 'PARATHA AND NAAN',
+                'WE DESI COMBO': 'WE DESI COMBO',
+                'RICE': 'RICE',
+                'DRINKS': 'DRINKS',
+                'DESSERTS': 'DESSERTS',
+                'KIDS SPECIAL': 'KIDS SPECIAL',
+                'SIDES': 'SIDES',
+                'c1':"VEG THALI",
+                'c2': "RAJMA RICE",
+                'c3': "KADHI RICE",
+                'c4': "MAKKI DI ROTI WITH SAAG",
+                'c5': "PANEER TIKKA RIXE BOWL",
+                'c6':"TIKKA COMBO",
+                'd1': '<br><span>$9.99</span> <br> Chef’s choice of 3 vegetables served with rice, naan and bread',
+'d2': '<br><span>$9.99</span> <br> Punjabi style rajma served with basmati rice',
+'d3': '<br><span>$9.99</span> <br> Punjabi style kadhi served with basmati rice',
+'d4': '<br><span>$9.99</span> <br> Steaming hot makki roti with a dollop of butter or ghee served with Saag',
+'d5': '<br><span>$11.99</span> <br> Basmati rice, paneer tikka, butter sauce and fresh greens',
+'d6': '<br><span>$14.99</span> <br> Your choice of any 2 tandoori items in one platter',
+
+              },
+              fr: {
+                'HOME': 'ACCUEIL',
+                'ABOUTUS': 'À PROPOS DE NOUS',
+                'GALLERY': 'GALERIE',
+                'MENU': 'MENU',
+                'SWEETS': 'SUCRERIES',
+                'CONTACT US': 'NOUS CONTACTER',
+                'VIEW ALL': 'VOIR TOUT',
+                'CHATPATTA CHAAT': 'chat épicé ',
+                'TIKKE-SHIKKE': 'TIC SHIKKÉ ',
+                'BURGER AND ROLLS': 'BURGER ET ROULEAUX ',
+                'INDO CHINESE': 'INDO CHINOIS',
+                'SOUTH INDIAN': 'INDIEN DU SUD ',
+                'DESI CURRIES': 'CURRIES DESI',
+                'PARATHA AND NAAN': 'PARATHA ET NAAN',
+                'WE DESI COMBO': 'NOUS DESI COMBO',
+                'RICE': 'RIZ',
+                'DRINKS': 'BOISSONS',
+                'DESSERTS': 'LE DESSERTS',
+                'KIDS SPECIAL': 'SPÉCIAL ENFANTS ',
+                'SIDES': 'CÔTÉS',
+                'c1':"LÉGUMES THALI",
+                'c2':"RIZ RAJMA",
+                'c3':"RIZ KADHI",
+                'c4':"MAKKI DI ROTI AVEC SAAG",
+                'c5':"BOL PANEER TIKKA RIXE",
+                'c6':"COMBO TIKKA",
+                'd1': '<br><span>9,99 $</span> <br> Choix du chef de 3 légumes servis avec du riz, du naan et du pain',
+'d2': '<br><span>9,99 $</span> <br> Rajma à la mode punjabi servi avec du riz basmati',
+'d3': '<br><span>9,99 $</span> <br> Kadhi à la mode punjabi servi avec du riz basmati',
+'d4': '<br><span>9,99 $</span> <br> Roti makki chaud avec une noisette de beurre ou de ghee servi avec du Saag',
+'d5': '<br><span>11,99 $</span> <br> Riz basmati, paneer tikka, sauce au beurre et légumes frais',
+'d6': '<br><span>14,99 $</span> <br> Votre choix de 2 éléments tandoori dans un plat'
+
+              }
+            };
+            
+            document.addEventListener('DOMContentLoaded', () => {
+              const savedLanguage = localStorage.getItem('language') || 'en';
+              translatePage(savedLanguage);
+              document.body.classList.toggle('fr-mode', savedLanguage === 'fr');
+            
+              document.getElementById('btn-en').addEventListener('click', () => {
+                setLanguage('en');
+              });
+            
+              document.getElementById('btn-fr').addEventListener('click', () => {
+                setLanguage('fr');
+              });
+            });
+            
+            function setLanguage(lang) {
+              localStorage.setItem('language', lang);
+              translatePage(lang);
+              document.body.classList.toggle('fr-mode', lang === 'fr');
+            }
+            
+            function translatePage(lang) {
+              const elementsToTranslate = {
+                '.home-button': 'HOME',
+                '.aboutus-button': 'ABOUTUS',
+                '.gallery-button': 'GALLERY',
+                '.menu-button': 'MENU',
+                '.sweets-button': 'SWEETS',
+                '.contactus-button': 'CONTACT US',
+                '.view': 'VIEW ALL',
+                
+                '.s1': 'CHATPATTA CHAAT',
+                '.s2': 'TIKKE-SHIKKE',
+                '.s3': 'BURGER AND ROLLS',
+                '.s4': 'INDO CHINESE',
+                '.s5': 'SOUTH INDIAN',
+                '.s6': 'DESI CURRIES',
+                '.s7': 'PARATHA AND NAAN',
+                '.s8': 'WE DESI COMBO',
+                '.s9': 'RICE',
+                '.s10': 'DRINKS',
+                '.s11': 'DESSERTS',
+                '.s12': 'KIDS SPECIAL',
+                '.s13': 'SIDES',
+                '.food-sweet__title.c1': "c1",
+                '.food-sweet__title.c2': "c2",
+                '.food-sweet__title.c3': "c3",
+                '.food-sweet__title.c4': "c4",
+                '.food-sweet__title.c5': "c5",
+                '.food-sweet__title.c6': "c6",
+                '.cloud1.d1': "d1",
+                '.cloud1.d2':  "d2",
+                '.cloud1.d3':  "d3",
+                '.cloud1.d4':  "d4",
+                '.cloud1.d5':  "d5",
+                '.cloud1.d6':  "d6",
+                
+              };
+            
+              for (const [selector, key] of Object.entries(elementsToTranslate)) {
+                const element = document.querySelector(selector);
+                if (element) {
+                  element.innerHTML = translations[lang][key];
+                }
+              }
+            }
+            </script>
+</body>
+
+</html>
