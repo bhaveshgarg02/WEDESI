@@ -497,7 +497,7 @@
                 'GALLERY': 'GALLERY',
                 'MENU': 'MENU',
                 'SWEETS': 'SWEETS',
-                'VIEW ALL': 'VIEW ALL',
+                'VIEW ALL': '<span class="view"> VIEW ALL > DESSERTS </span>',
                 'CONTACT US': 'CONTACT US',
                 'CHATPATTA CHAAT': 'CHATPATTA CHAAT',
                 'TIKKE-SHIKKE': 'TIKKE-SHIKKE',
@@ -534,7 +534,7 @@
                 'MENU': 'MENU',
                 'SWEETS': 'SUCRERIES',
                 'CONTACT US': 'NOUS CONTACTER',
-                'VIEW ALL': 'VOIR TOUT',
+                'VIEW ALL': '<span class="view"> VOIR TOUT > LE DESSERTS </span>',
                 'CHATPATTA CHAAT': 'chat épicé ',
                 'TIKKE-SHIKKE': 'TIC SHIKKÉ ',
                 'BURGER AND ROLLS': 'BURGER ET ROULEAUX ',
@@ -628,7 +628,7 @@
               for (const [selector, key] of Object.entries(elementsToTranslate)) {
                 const element = document.querySelector(selector);
                 if (element) {
-                  element.innerText = translations[lang][key];
+                  element.innerHTML = translations[lang][key];
                 }
               }
             }
