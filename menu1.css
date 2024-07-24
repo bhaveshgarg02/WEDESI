@@ -835,9 +835,9 @@ scrollbar-width: none;  /* Firefox */
       z-index: 100;
   }
     .food-sweet__item .cloud1{
-        top:65%;
+        top:66%;
         position: absolute;
-        left:-45%;
+        left:-42%;
         margin-right: 42%;
         font-size: small;
         font-family: "Poppins",sans-serif;
@@ -1229,7 +1229,7 @@ width:350px;
 position: absolute;
 z-index: 50;
 background: transparent;
-top: 64%;
+top: 67%;
 right: -22%;
 font-size: small;
 font-family: "Poppins", sans-serif;
@@ -1241,8 +1241,8 @@ z-index: 100;
 }
 .food-sweet__item .cloud1{
 top:80%;
-margin-left: 72%;
-margin-right: 30%;
+margin-left: 78%;
+margin-right: 32%;
 font-size: x-small;
 font-family: "Poppins",sans-serif;
 color: black;
@@ -1282,9 +1282,9 @@ background-color: transparent;
     z-index: 100;
   }
   .food-sweet__item .cloud1{
-    left:-35%;
+    left:-24%;
     margin-right: 40%;
-    top: 70%;
+    top: 65%;
   }
 }
 /* 
@@ -1374,7 +1374,7 @@ background-color: transparent;
 } */
 
 
-@media(max-width:700px) and (min-width:550px){
+@media(max-width:1000px) and (min-width:550px){
   .menu {
     flex-direction: column-reverse;
     align-items: center;
@@ -1384,7 +1384,7 @@ background-color: transparent;
     height: 100%;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -120%;
     z-index: 1000;
     background-color:white;
 
@@ -1456,7 +1456,7 @@ background-color: transparent;
 }
 
 
-@media(min-width:1620px){
+@media(min-width:1570px){
   .scroll{  
     width: 80vw !important;
   }
