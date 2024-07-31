@@ -20,6 +20,7 @@
   top: 17px;
   right: 10px;
   z-index: 10000;
+  position: fixed;
   background-color: transparent;
 }
 .language-buttons button {
@@ -40,9 +41,10 @@
 }
 @media(max-width: 660px){
   .language-buttons {
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 50px;
+    
   }
   .fr-mode #page1{
     top:1.8%
@@ -71,7 +73,7 @@
   background-color: white;
  
   position: fixed;
-  
+  overflow-y: hidden;
   z-index: 50;
   
 
@@ -228,6 +230,7 @@ text-align: center;
   text-decoration: none;
   margin-top: 1rem;
   z-index: 5;
+  background-color: transparent;
 
 
  
@@ -866,6 +869,7 @@ scrollbar-width: none;  /* Firefox */
 /* Hide scrollbar for IE, Edge and Firefox */
 
 #content {
+  
   height: 1000px; /* Adjust as needed */
  
 }
@@ -1472,7 +1476,7 @@ background-color: transparent;
 
 @media(max-width:1010px){
   .language-buttons {
-    position: absolute;
+    position: fixed;
     top: 5px;
     right: 50px;
   }
@@ -1481,7 +1485,7 @@ background-color: transparent;
 
 @media(max-width:700px){
 .language-buttons {
-  position: absolute;
+  position: fixed;
   top: 5px;
   right: 50px;
 }
