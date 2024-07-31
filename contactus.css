@@ -45,7 +45,7 @@ font-weight: bold;
     right: 50px;
   }
   .fr-mode #page1{
-    top:8%
+    top:1.8%
   }
 }
 
@@ -649,28 +649,31 @@ html,body{
   }
 
   .reservation h2{
-    font-size: 35px ;
+    font-size: 30px ;
     margin-bottom: 25px;
   }
   .reservation h4{
-    font-size: 17px;
+    font-size: 14px;
+  }
+  hr{
+    border: 3px solid  rgb(245, 140, 31);
   }
   .reservation h5{
-    font-size: 18px;
+    font-size: 14px;
   }
   .reservation h1{
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 
     10px;
   }
   .reservation h3{
-    font-size: 19px;
+    font-size: 14px;
   }
   .contactus{
-    font-size: 35px;
+    font-size: 30px;
   }
   .happiness{
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
