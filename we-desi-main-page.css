@@ -2130,21 +2130,32 @@ bottom: 0%;
     top:20%;
   }
   .box2 .overlay{
-    left: 32%;
+    left: 29%;
     top:20%;
   }
   .photo-left{
-    margin-left: 15px;
+    margin-left: 5px;
   }
   .photo-right{
-    margin-left: 20px;
+    margin-left: 0px;
+  }
+  .photo-left1{
+    margin-left: -10%;
+  }
+  .photo-right1{
+    margin-left: -3%;
   }
   .food-sweet__title{
-    margin-left: -30
-    px;
+    margin-left: -30px;
   }
-  .food-sweet__item img{
-    margin-left: 16px;
+  .food-sweet__item{
+    margin-left: -10px;
+  }
+  .heading-left{
+    margin-left: -80px;
+  }
+  .heading-right{
+    margin-left: -70px;
   }
 }
 
