@@ -1263,11 +1263,11 @@ body {
 .photo-left1{
   height: 500px;
   width: 400px;
-  margin-left:-60px;
+  margin-left:-50px;
 }
 .heading-left{
   align-items: center;
-  margin-left: -4%;
+  margin-left: -14%;
 }
 .heading-right{
   
@@ -1278,13 +1278,13 @@ transition: opacity 0.15s;
 vertical-align:middle;
 text-align: center;
 position: absolute;
-left: 100px;
+left: 140px;
 bottom: 0%;
 }
 .photo-right{
   height: 300px;
   width: 300px;
-  margin-left:35px;
+  margin-left:65px;
   float: left;
 
 }
@@ -1292,7 +1292,7 @@ bottom: 0%;
   height: 500px;
   width: 400px;
   margin-left:0px;
-  left:-1%;
+  left:1%;
   top:-20%;
 
 }
