@@ -144,7 +144,7 @@ header li{
       }
     *{
     font-size: 62.5%;
-    padding-left: 0.1rem;
+    padding-left: 0rem !important;
     background-color: white;
 }
 }
