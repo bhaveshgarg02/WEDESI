@@ -889,4 +889,10 @@ html,body{
   top: 5px;
   right: 50px;
 }
+     .logo{
+        margin-left: -19px;
+        margin-right: 10vw;
+        margin-bottom: 10px;
+    }
+    
 }
