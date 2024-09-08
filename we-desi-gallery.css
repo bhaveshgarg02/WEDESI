@@ -142,7 +142,11 @@ header li{
     .footer span{
         display: none;
       }
-    
+    *{
+    font-size: 62.5%;
+    padding-left: 0.1rem;
+    background-color: white;
+}
 }
 
 .heading {
